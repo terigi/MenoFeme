@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fundoApp"
+    tools:context=".view.Tcle">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="70dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:text="@string/txtTcle"
+                android:textColor="@color/padrão"
+                android:textSize="18sp"/>
+
+            <com.github.barteksc.pdfviewer.PDFView
+                android:id="@+id/viewPdfTcle"
+                android:layout_width="350dp"
+                android:layout_height="500dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:background="@color/white"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnTcle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn1"
+                android:text="@string/btnTermoS"
+                android:textColor="@color/padrão"
+                tools:ignore="TextSizeCheck" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

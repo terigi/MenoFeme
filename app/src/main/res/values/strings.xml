@@ -1,0 +1,341 @@
+<resources>
+    //Nome do aplicativo
+    <string name="app_name">MenoFemeApp</string>
+
+    //Controles do drawermenu
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_sobre">Sobre nós</string>
+    <string name="menu_contato">Contatos</string>
+    <string name="menu_privacidade">Privacidade</string>
+    <string name="menu_tcle">TCLE</string>
+    <string name="menu_logoff">Logoff</string>
+    <string name="menu_sair">Sair</string>
+    <string name="menu_excluir">Excluir conta</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="menu_estagio">Estágio</string>
+
+
+    //Itens no menu Drawer
+    <string name="menu_dados">Dados Pessoais</string>
+    <string name="menu_Sair">Sair da aplicação</string>
+    <string name="menu_comunicar">Comunicação</string>
+    <string name="menu_etica">Aspectos Éticos</string>
+    <string name="menu_app">Meno Feme</string>
+
+
+    //Controles
+    <string name="Debug">Teste</string>
+    <string name="menuTitle">Menu</string>
+    <string name="debugNasc">Nascimento</string>
+    <string name="debugEtnia">Escolha uma opção</string>
+    <string name="Q1Est">Por favor escolha uma opção para a primeira pergunta</string>
+    <string name="Q2Est">Por favor escolha uma opção para a segunda ou em caso de FSH >= 20, insira o valor no campo indicado</string>
+    <string name="Quest2Tema1"><b><i>Facilidade de uso e satisfação</i></b></string>
+    <string name="Quest2Tema2"><b><i>Arranjo de informações do sistema</i></b></string>
+    <string name="Quest2Tema3"><b><i>Utilidade</i></b></string>
+
+    //Spinner
+    <string name="txtTcle">Termo de consentimento livre e esclarecido</string>
+
+    //String
+    <string name="txtAceiteTcle">Eu, declaro que concordo em participar desta pesquisa.</string>
+    <string name="txtAceitePrivacidade">Eu, declaro que entendo e concordo com a Política de privacidade deste aplicativo</string>
+    <string name="txtAceitePrivacidade1">Política de privacidade</string>
+    <string name="txtPrivacidade">Política de privacidade</string>
+    <string name="txtNasc">Informe a data do seu nascimento</string>
+    <string name="txtEtnia">Etnia</string>
+    <string name="txtJuliana"><b>Doutoranda:</b>Juliana Nobre da Silva</string>
+    <string name="txtSilvia"><b>Orientadora:</b>Silvia Cristina Martini</string>
+    <string name="txtTese"><b>Tese:</b> <i>Aplicativo móvel para orientação de mulheres no período do climatério</i></string>
+    <string name="txtApp"> <i>Esse aplicativo foi desenvolvido a partir de uma pesquisa de doutorado da Universidade de Mogi das Cruzes com o objetivo de orientar mulheres no período do climatério</i></string>
+    <string name="txtCadastroOk">Cadastro realizado com sucesso</string>
+    <string name="txtBemVinda">Seja Bem-vinda,</string>
+    <string name="txtTermo">Leia nossa Política de Privacidade e nosso Termo de Consentimento Livre e Esclarecido para saber mais sobre a maneira como protegemos suas informações pessoais.Recomendamos que você participe do programa de melhoria e compartilhe suas estatísticas de uso para nos ajudar a melhorar o MenoFeme.</string>
+    <string name="txtTermoN">Para utilizar essa função os termos de Política de Privacidade  e Termo de Consentimento Livre e Esclarecido devem ser aceitos !!! Você aceita os termos? </string>
+    <string name="txtExcluir">Você confirma a exclusão da sua conta nesse aplicativo?</string>
+    <string name="txtUltima">Sua última menstruação foi há mais de um ano?</string>
+    <string name="txtFsh">Qual o seu nível de FSH?</string>
+    <string name="txtAtraso">Você tem apresentado atraso menstrual de no mínimo 7 dias ou ausência de mestruação em meses alternados?</string>
+    <string name="txtEst1">Parece que você está vivenciando o estágio da <b><i>PÓS-MENOPAUSA</i></b></string>
+    <string name="txtEst2">Parece que você está vivenciando o estágio da <b><i>PERIMENOPAUSA</i></b></string>
+    <string name="txtEst3">Parece que você está vivenciando o estágio <b><i>REPRODUTIVO</i></b></string>
+    <string name="txtObs1">O que é o climatério e menopausa?</string>
+    <string name="txtObs2">Qual é a idade em que comumente se entra no climatério?</string>
+    <string name="txtObs3">Quais mudanças podem ocorrer neste período?</string>
+    <string name="txtObs4">Como passar por essa fase da melhor forma?</string>
+    <string name="txtSint1">Afrontamento (calorão)</string>
+    <string name="txtSint2">Sintomas vaginais</string>
+    <string name="txtSint3">Sintomas urinários</string>
+    <string name="txtSint4">Fadiga</string>
+    <string name="txtSint5">Diminuição da libido</string>
+    <string name="txtSint6">Problemas psicológicos e neurológicos</string>
+    <string name="txtSint7">Dores</string>
+    <string name="txtSint8">Mudanças na pele e cabelo</string>
+    <string name="txtTratamento">Existem algumas formas de tratar os distúrbios da menopausa.</string>
+    <string name="txtTratamento1">A escolha de qual é o melhor tratamento para cada mulher deve ser discutida com o médico ginecologista de forma individualizada, levando em consideração seus sintomas, histórico médico e preferências.</string>
+    <string name="txtTipo1">Medicamentos não hormonais</string>
+    <string name="txtTipo2">Tratamentos hormonais</string>
+    <string name="txtTipo3">Tratamentos alternativos ou complementares</string>
+    <string name="txtQuestionario1"><b><i>MenQol:</i></b>Questionário Específico de qualidade de vida na menopausa</string>
+    <string name="txtQuestionario2"><b><i>MauQ:</i></b> Questionário de usabilidade de aplicativos em saúde</string>
+    <string name="txtObjQuest1"><b><i>Objetivo da aplicação:</i></b> Verificar a evolução dos sintomas antes e após a exposição das orientações do aplicativo</string>
+    <string name="txtObjQuest2"><b><i>Objetivo da aplicação: </i></b>Verificar a facilidade de uso do aplicativo</string>
+    <string name="txtDefQuest"><b><i>Escala de pontos:</i></b></string>
+    <string name="txtQ1Q1">Ondas de calor</string>
+    <string name="txtQ1Q2">Suores noturnos</string>
+    <string name="txtQ1Q3">Suor excessivo (dia)</string>
+    <string name="txtQ1Q4">Estar insatisfeita com a vida pessoal</string>
+    <string name="txtQ1Q5">Sentindo-se ansiosa ou nervosa</string>
+    <string name="txtQ1Q6">Experimentando memória fraca</string>
+    <string name="txtQ1Q7">Realizando menos do que costumava</string>
+    <string name="txtQ1Q8">Sentindo-se deprimida, deprimida ou azul</string>
+    <string name="txtQ1Q9">Ser impaciente com outras pessoas</string>
+    <string name="txtQ1Q10">Sensação de querer ficar sozinha</string>
+    <string name="txtQ1Q11">Flatulência (gases) ou dores abdominais</string>
+    <string name="txtQ1Q12">Dores musculares e nas articulações</string>
+    <string name="txtQ1Q13">Sentindo-se cansada ou desgastada</string>
+    <string name="txtQ1Q14">Dificuldade para dormir</string>
+    <string name="txtQ1Q15">Dores na nuca ou na cabeça</string>
+    <string name="txtQ1Q16">Diminuição da força física</string>
+    <string name="txtQ1Q17">Diminuição da resistência</string>
+    <string name="txtQ1Q18">Sentindo falta de energia</string>
+    <string name="txtQ1Q19">Ressecamento da pele</string>
+    <string name="txtQ1Q20">Ganho de peso</string>
+    <string name="txtQ1Q21">Aumento de pêlos faciais</string>
+    <string name="txtQ1Q22">Mudança na textura ou no tom da pele</string>
+    <string name="txtQ1Q23">Sentindo-se inchada</string>
+    <string name="txtQ1Q24">Dor lombar</string>
+    <string name="txtQ1Q25">Micção frequente</string>
+    <string name="txtQ1Q26">Micção involuntária ao rir ou tossir</string>
+    <string name="txtQ1Q27">Diminuição do desejo sexual</string>
+    <string name="txtQ1Q28">Secura vaginal durante a relação sexual</string>
+    <string name="txtQ1Q29">Esquivando-se de ter intimidade com parceiro</string>
+    <string name="txtQ1Q30">Diminuição da força física</string>
+    <string name="txtQ2Q1">O aplicativo foi fácil de usar</string>
+    <string name="txtQ2Q2">Eu gosto da interface do aplicativo</string>
+    <string name="txtQ2Q3">As informações no aplicativo estavam bem-organizadas, para que eu pudesse encontrar facilmente as informações que precisava</string>
+    <string name="txtQ2Q4">Eu me sinto confortável usando este aplicativo</string>
+    <string name="txtQ2Q5">A quantidade de tempo envolvida no uso deste aplicativo foi adequada para mim</string>
+    <string name="txtQ2Q6">Eu usaria este aplicativo novamente</string>
+    <string name="txtQ2Q7">No geral, estou satisfeito com este aplicativo</string>
+    <string name="txtQ2Q8">Este aplicativo me forneceu informações relevantes</string>
+    <string name="txtQ2Q9">A navegação foi consistente ao se mover entre as telas</string>
+    <string name="txtQ2Q10">A interface do aplicativo me permitiu usar todas as funções (como inserir informações, responder às perguntas, visualizar informações) oferecidas pelo aplicativo</string>
+    <string name="txtQ2Q11">Este aplicativo tem todas as funções e recursos que eu espero que tenha</string>
+    <string name="txtQ2Q12">O aplicativo seria útil para minha saúde e bem-estar</string>
+    <string name="txtQ2Q13">O aplicativo me incentivou a procurar serviços de saúde</string>
+    <string name="txtQ2Q14">O aplicativo me ajudou a gerenciar minha saúde de forma eficaz</string>
+    <string name="txtQ2Q15">O aplicativo me incentivou a relatar minhas queixas ao meu médico</string>
+    <string name="txtQ2Q16">Usando o aplicativo, fui encorajada a interagir com meu médico</string>
+    <string name="txtQ2Q17">Eu me senti confiante de que as minhas informações inseridas no aplicativo seriam tratadas de forma confidencial, e que meus dados estariam seguros</string>
+    <string name="txtQ2Q18">Senti-me à vontade para levar ao meu médico os relatórios oferecidos pelo aplicativo, como por exemplo os dados do diário de eventos e o questionário de qualidade de vida da menopausa</string>
+    <string name="txtQ1">Escolha uma opção para a pergunta 1</string>
+    <string name="txtQ2">Escolha uma opção para a pergunta 2</string>
+    <string name="txtQ3">Escolha uma opção para a pergunta 3</string>
+    <string name="txtQ4">Escolha uma opção para a pergunta 4</string>
+    <string name="txtQ5">Escolha uma opção para a pergunta 5</string>
+    <string name="txtQ6">Escolha uma opção para a pergunta 6</string>
+    <string name="txtQ7">Escolha uma opção para a pergunta 7</string>
+    <string name="txtQ8">Escolha uma opção para a pergunta 8</string>
+    <string name="txtQ9">Escolha uma opção para a pergunta 9</string>
+    <string name="txtQ10">Escolha uma opção para a pergunta 10</string>
+    <string name="txtQ11">Escolha uma opção para a pergunta 11</string>
+    <string name="txtQ12">Escolha uma opção para a pergunta 12</string>
+    <string name="txtQ13">Escolha uma opção para a pergunta 13</string>
+    <string name="txtQ14">Escolha uma opção para a pergunta 14</string>
+    <string name="txtQ15">Escolha uma opção para a pergunta 15</string>
+    <string name="txtQ16">Escolha uma opção para a pergunta 16</string>
+    <string name="txtQ17">Escolha uma opção para a pergunta 17</string>
+    <string name="txtQ18">Escolha uma opção para a pergunta 18</string>
+    <string name="txtQ19">Escolha uma opção para a pergunta 19</string>
+    <string name="txtQ20">Escolha uma opção para a pergunta 20</string>
+    <string name="txtQ21">Escolha uma opção para a pergunta 21</string>
+    <string name="txtQ22">Escolha uma opção para a pergunta 22</string>
+    <string name="txtQ23">Escolha uma opção para a pergunta 23</string>
+    <string name="txtQ24">Escolha uma opção para a pergunta 24</string>
+    <string name="txtQ25">Escolha uma opção para a pergunta 25</string>
+    <string name="txtQ26">Escolha uma opção para a pergunta 26</string>
+    <string name="txtQ27">Escolha uma opção para a pergunta 27</string>
+    <string name="txtQ28">Escolha uma opção para a pergunta 28</string>
+    <string name="txtQ29">Escolha uma opção para a pergunta 29</string>
+    <string name="txtFinal1">Muito obrigada por responder o questionário MenQol!!!</string>
+    <string name="txtFinal2">Muito obrigada por responder o questionário MauQ!!!</string>
+
+
+    //Hints
+    <string name="hintNome">Digite o seu nome</string>
+    <string name="hintEmail">Digite o seu e-mail</string>
+    <string name="hintSenha">Defina uma senha</string>
+    <string name="hintPrimeira">Informe a idade da primeira menstruação</string>
+    <string name="hintProfissao">Informe a sua profissão</string>
+    <string name="lblTermos"><i>Política de privacidade</i></string>
+
+    //Labels
+    <string name="lblOla">Olá</string>
+    <string name="btnCadastrar">Cadastrar</string>
+
+    //Botões
+    <string name="btnEntrar">Entrar</string>
+    <string name="btnSair">Sair</string>
+    <string name="btnVoltar">Voltar</string>
+    <string name="btnAtualizar">Atualizar</string>
+    <string name="btnAlterar">Alterar dados</string>
+    <string name="btnProximo">Próxima Página</string>
+    <string name="btnEstagio">Em qual estágio estou?</string>
+    <string name="btnOrientacoes">Orientações gerais</string>
+    <string name="btnSintomas">Como  minimizar os sintomas?</string>
+    <string name="btnTratamento">Tratamentos existentes</string>
+    <string name="btnQuestionario">Questionários</string>
+    <string name="btnDiario">Diário</string>
+    <string name="btnTermo">Aceitar Política de Privacidade  e Termo de Consentimento Livre e Esclarecido</string>
+    <string name="btnTermoS">Continuar App</string>
+    <string name="btnAnalisar">Analisar</string>
+    <string name="btnSaiba">Saiba mais</string>
+    <string name="btnOk">OK</string>
+    <string name="erroSenha">Digite uma senha com no mínimo 6 caracteres</string>
+
+
+    #Controles de erro
+    <string name="erroEmail">Digite um e-mail válido</string>
+    <string name="erroConta">Essa conta já existe</string>
+    <string name="erroInternet">Sem conexão com a Internet</string>
+    <string name="erroOutros">Erro ao cadastrar usuário</string>
+    <string name="erroDados">Preencha todos os campos corretamente</string>
+    <string name="erroDados1">Não foi possível realizar o Login</string>
+    <string name="erroNasc">Por favor escolha uma data de nascimento válida</string>
+    <string name="erroEtnia">Por favor escolha uma etnia válida</string>
+    <string name="rbSim">Sim</string>
+
+    //Radio buttons
+    <string name="rbNao">Não</string>
+    <string name="linhaInfo">Esse aplicativo é meramente informativo e não substitui a consulta médica!!!</string>
+
+    //Linhas explicativas
+    <string name="linha2Est1">Neste estágio é possível que você já tenha percebido certas mudanças em seu corpo e esteja experimentando alguns sintomas característicos desta fase!!!</string>
+    <string name="linha3Est1">Estas mudanças são normais, porém devem ser acompanhadas por um médico ginecologista!!!</string>
+    <string name="linha2Est2">Neste estágio os ciclos menstruais oscilam e as menstruações podem vir em um intervalo menor ou maior do que de costume!!!</string>
+    <string name="linha3Est2">Ainda é possível engravidar, portanto, caso não tenha esta pretensão, o uso de contraceptivos deve ser mantido!!!</string>
+    <string name="linha4Est2">Este é um período de mudanças e alguns sintomas podem surgir, portanto é imprescindível o acompanhamento de um ginecologista!!! </string>
+    <string name="linha2Est3">Nesse estágio os ciclos menstruais costumam ser regulares e é possível engravidar !!!</string>
+    <string name="linha3Est3">Você provavelmente não apresenta sintomas de menopausa, mas se atenha aos ciclos menstruais e possíveis sintomas que possam surgir!!!</string>
+    <string name="linha4Est3">Caso perceba alguma alteração relate ao seu ginecologista!!!</string>
+    <string name="Linha1Duv1">Climatério é o período que interliga a fase reprodutiva e não reprodutiva da mulher, também conhecido como transição da menopausa ou perimenopausa.</string>
+    <string name="Linha2Duv1">Nesse período alguns sintomas podem surgir por causa da diminuição da produção de um hormônio chamado estrogênio.</string>
+    <string name="Linha3Duv1">Já a menopausa é um período em que a mulher fica por um ano sem menstruar, o que sinaliza o fim do período reprodutivo da mulher, a partir daí seus ciclos menstruais se encerram, e ela passa a vivenciar a pós-menopausa.</string>
+    <string name="Linha1Duv2">A partir dos 40 anos a mulher pode apresentar sintomas do climatério, porém é mais comum entre 45 e 54 anos.</string>
+    <string name="Linha1Duv3">Irregularidade do ciclo menstrual costuma ser o primeiro sinal do climatério.</string>
+    <string name="Linha2Duv3">A mulher pode menstruar em intervalos menores (de 20 em 20 dias, por exemplo), ou pode ficar um ou mais meses sem menstruar.</string>
+    <string name="Linha3Duv3">Outros incômodos como ondas de calor, dores, alterações na pele e cabelo, também podem surgir neste período.</string>
+    <string name="Linha1Duv4">Passar por este período com acompanhamento médico é indispensável, pois este avaliará sua saúde e suas queixas, indicando a melhor intervenção.</string>
+    <string name="Linha2Duv4">Além disso, cuidados com a alimentação, prática de atividade física, e manter relações sociais e familiares saudáveis também contribuem para o bem estar da mulher nesta fase.</string>
+    <string name="Linha3Duv4">Outros profissionais da área da saúde como psicólogos, nutricionistas, fisioterapeutas e educadores físicos também podem auxilia-la a transcorrer este período com qualidade de vida!</string>
+    <string name="Linha1Sint1">Como amenizar os afrontamentos?</string>
+    <string name="Linha2Sint1">Usar roupas em camadas que possam ser facilmente retiradas ao perceber a chegada dos sintomas;</string>
+    <string name="Linha3Sint1">Usar tecidos leves que deixem a pele “respirar”;</string>
+    <string name="Linha4Sint1">Beber um copo de água ou um suco quando perceber a chegada do afrontamento (calorão);</string>
+    <string name="Linha5Sint1">Não fumar, evitar o consumo de bebidas alcoólicas e de cafeína;</string>
+    <string name="Linha6Sint1">Ter um diário para anotar os momentos em que o calor se inicia, e desse modo, tentar identificar situações gatilho e evita-las;</string>
+    <string name="Linha7Sint1">Evitar ambientes abafados e aglomerações de pessoas;</string>
+    <string name="Linha8Sint1">Perder peso, caso haja excesso de peso;</string>
+    <string name="Linha9Sint1">Respirar lenta e profundamente por alguns minutos.</string>
+    <string name="Linha1Sint2">Como amenizar os sintomas vaginais?</string>
+    <string name="Linha2Sint2">Observar se o uso de sabonetes, espermicidas ou protetores de calcinha são os causadores de irritação;</string>
+    <string name="Linha3Sint2">Manter as atividades sexuais evitam a progressão desses sintomas;</string>
+    <string name="Linha4Sint2">Aumento do período das “preliminares” no momento do ato sexual, para estimular as secreções vaginais;</string>
+    <string name="Linha5Sint2">Uso de lubrificantes vaginais durante as relações sexuais, sendo estes comerciais ou naturais como óleo de côco, óleo mineral ou azeite podem diminuir os incômodos;</string>
+    <string name="Linha6Sint2">Uso de hidratantes vaginais podem ser benéficos, pois ajudam a reter a humildade natural da mucosa;</string>
+    <string name="Linha7Sint2">Fortalecer o assoalho pélvico através do auxílio de um fisioterapeuta.</string>
+    <string name="Linha1Sint3">Como amenizar os sintomas urinários?</string>
+    <string name="Linha2Sint3">Usar roupas íntimas confortáveis e de tecidos leves;</string>
+    <string name="Linha3Sint3">Não reter a urina por longos períodos;</string>
+    <string name="Linha4Sint3">Realizar a higiene após usar o banheiro sempre com papel no sentido de frente para trás;</string>
+    <string name="Linha5Sint3">Manter-se hidratada durante o dia;</string>
+    <string name="Linha6Sint3">A ingestão de 2 a 3 xícaras de chá verde por dia pode ser benéfica para reduzir as recorrências das infecções urinárias, porém a infecção deve ser tratada por um médico;</string>
+    <string name="Linha7Sint3">Terapia a laser realizada por um profissional capacitado e devidamente prescrita pelo seu ginecologista pode ser uma alternativa.</string>
+    <string name="Linha1Sint4">Como amenizar a fadiga?</string>
+    <string name="Linha2Sint4">Perder peso, caso haja excesso de peso;</string>
+    <string name="Linha3Sint4">Praticar atividade física com exercícios de fortalecimento muscular;</string>
+    <string name="Linha4Sint4">Realizar acompanhamento nutricional com especialista, pois a deficiência vitamínica pode promover ou exacerbar a fadiga;</string>
+    <string name="Linha5Sint4">Dormir pelo menos 7 horas por noite;</string>
+    <string name="Linha6Sint4">Deitar-se e levantar-se sempre nos mesmos horários;</string>
+    <string name="Linha7Sint4">Fisioterapia, yoga e pilates realizados com auxílio de um profissional podem amenizar estes sintomas.</string>
+    <string name="Linha1Sint5">Como amenizar a falta de libido?</string>
+    <string name="Linha2Sint5">Realizar atividade física;</string>
+    <string name="Linha3Sint5">Ter acompanhamento nutricional com especialistas;</string>
+    <string name="Linha4Sint5">Manter um período de sono adequado;</string>
+    <string name="Linha5Sint5">Procurar informações sobre sexualidade (livros, revistas, páginas de médicos especialistas);</string>
+    <string name="Linha6Sint5">Manter sempre um diálogo aberto com o parceiro pode diminuir a tensão que envolve o assunto.</string>
+    <string name="Linha1Sint6">Como amenizar os sintomas psicológicos e neurológicos?</string>
+    <string name="Linha2Sint6">Realizar atividade física durante o dia (mínimo 3x por semana e 30 minutos por dia);</string>
+    <string name="Linha3Sint6">Durante o dia, praticar leitura de livros com assuntos de interesse, palavras cruzadas e jogos que estimulem a memória e a concentração;</string>
+    <string name="Linha4Sint6">Praticar meditação para aliviar o estresse;</string>
+    <string name="Linha5Sint6">Assumir a iniciativa de melhorar a qualidade de relações sociais e familiares pode ajudar a amenizar a ansiedade, o humor deprimido e o estresse;</string>
+    <string name="Linha6Sint6">Não fazer nenhuma refeição pesada antes de se deitar e evitar bebidas à base de cafeína no fim da tarde pode melhorar a qualidade do sono;</string>
+    <string name="Linha7Sint6">Ao sentir-se estressada ou ansiosa, experimente realizar uma respiração lenta e profunda por alguns minutos.</string>
+    <string name="Linha1Sint7">Como amenizar as dores?</string>
+    <string name="Linha2Sint7">Procurar acompanhamento médico para verificar a possibilidade de doença crônica;</string>
+    <string name="Linha3Sint7">Adotar hábitos alimentares saudáveis com alimentação rica em frutas, verduras, legumes, peixes e frutos do mar;</string>
+    <string name="Linha4Sint7">Praticar exercícios de fortalecimento com o auxílio de profissional capacitado;</string>
+    <string name="Linha5Sint7">Observar a postura durante as atividade do dia-a-dia;</string>
+    <string name="Linha6Sint7">Quando permanecer sentado por longo período de tempo, levantar-se e caminhar um pouco a cada uma hora.</string>
+    <string name="Linha1Sint8">Como amenizar as mudanças na pele e no cabelo?</string>
+    <string name="Linha2Sint8">A ingestão de água, chás e sucos contribui para a boa hidratação e beleza da pele; </string>
+    <string name="Linha3Sint8">Adotar uma boa alimentação rica em vitaminas e sais minerais;</string>
+    <string name="Linha4Sint8">Realizar limpeza da pele da face e do colo com bastante água fresca e auxílio de sabonete neutro, nos casos de pele oleosa;</string>
+    <string name="Linha5Sint8">Usar diariamente protetor solar com fator de proteção solar preferencialmente acima de 30; </string>
+    <string name="Linha6Sint8">O uso de máscara de hidratação noturna comercial ou natural (pode ser feita a base de aveia, iogurte natural e frutas como maçã e abacate) pode ser benéfico para pele.</string>
+    <string name="Linha1Tipo1">Os medicamentos não hormonais são no geral a primeira escolha de tratamento para a menopausa.</string>
+    <string name="Linha2Tipo1">Alguns medicamentos que no geral são utilizados para tratamento da depressão, hipertensão e convulsão também são eficazes para tratar sintomas da menopausa.</string>
+    <string name="Linha1Tipo2">Os tratamentos hormonais consistem na utilização de medicamentos a base de hormônios, que dependendo dos sintomas são apresentados em forma de comprimidos orais, adesivos tópicos ou formas intravaginais, como anéis, geis, comprimidos ou cremes. </string>
+    <string name="Linha2Tipo2">A escolha por este tratamento deve ser analisada pelo medico ginecologista e paciente, uma vez que há restrições de uso para algumas mulheres.</string>
+    <string name="Linha1Tipo3">Tratamentos alternativos ou complementares também são indicados pelo Ministério da saúde, os quais podem ser técnica de respiração, terapia comportamental, técnicas de relaxamento, aromaterapia, utilização de ervas, vitaminas e minerais, entre outros.</string>
+    <string name="Linha1DefQuest1">0 - Não houve incômodo</string>
+    <string name="Linha2DefQuest1">1 - Houve pouquíssimo incômodo</string>
+    <string name="Linha3DefQuest1">2 - Houve pouco incômodo</string>
+    <string name="Linha4DefQuest1">3 - O incômodo foi mediano</string>
+    <string name="Linha5DefQuest1">4 - Houve muito incômodo</string>
+    <string name="Linha6DefQuest1">5 - Houve fortissimo incômodo</string>
+    <string name="Linha7DefQuest1">6 - O incômodo foi praticamente insuportável</string>
+    <string name="Linha1DefQuest2">1 - Discordo Totalmente</string>
+    <string name="Linha2DefQuest2">2 - Discordo quase totalmente</string>
+    <string name="Linha3DefQuest2">3 - Discordo parcialmente</string>
+    <string name="Linha4DefQuest2">4 - Não discordo nem concordo</string>
+    <string name="Linha5DefQuest2">5 - Concordo parcialmente</string>
+    <string name="Linha6DefQuest2">6 - Concordo quase totalmente</string>
+    <string name="Linha7DefQuest2">7 - Concordo totalmente</string>
+    <string name="opt0">0</string>
+
+    #opções
+    <string name="opt1">1</string>
+    <string name="opt2">2</string>
+    <string name="opt3">3</string>
+    <string name="opt4">4</string>
+    <string name="opt5">5</string>
+    <string name="opt6">6</string>
+    <string name="Q2opt1">1</string>
+    <string name="Q2opt2">2</string>
+    <string name="Q2opt3">3</string>
+    <string name="Q2opt4">4</string>
+    <string name="Q2opt5">5</string>
+    <string name="Q2opt6">6</string>
+    <string name="Q2opt7">7</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="spinner_lista">
+        <item>Escolha uma opção</item>
+        <item>Branca</item>
+        <item>Parda</item>
+        <item>Negra</item>
+        <item>Amarela</item>
+        <item>Indígena</item>
+        <item>Outra</item>
+    </string-array>
+</resources>

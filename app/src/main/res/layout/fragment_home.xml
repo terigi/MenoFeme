@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".view.ui.home.HomeFragment">
+    <FrameLayout
+        android:id="@+id/layFundoTratamentos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="35dp">
+        <ScrollView
+            android:id="@+id/scrollTratamentos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            tools:ignore="UselessParent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/txtBemVinda"
+                    android:textSize="20sp"
+                    android:textColor="@color/padrão"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/lblNome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/Debug"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/padrão"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnEstagio"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/btn1"
+                    android:text="@string/btnEstagio"
+                    android:textColor="@color/padrão"
+                    android:layout_gravity="center"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnOrientacoes"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/btn1"
+                    android:text="@string/btnOrientacoes"
+                    android:textColor="@color/padrão"
+                    android:layout_gravity="center" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSintomas"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/btn1"
+                    android:text="@string/btnSintomas"
+                    android:textColor="@color/padrão"
+                    tools:ignore="TextSizeCheck" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnTratamento"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/btn1"
+                    android:text="@string/btnTratamento"
+                    android:textColor="@color/padrão"
+                    tools:ignore="TextSizeCheck" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnQuestionarios"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/btn1"
+                    android:text="@string/btnQuestionario"
+                    android:textColor="@color/padrão"
+                    android:layout_gravity="center" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnDiario"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/btn1"
+                    android:text="@string/btnDiario"
+                    android:textColor="@color/padrão"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+
+
+</LinearLayout>

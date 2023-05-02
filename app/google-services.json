@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "976506056714",
+    "project_id": "menofeme-3c392",
+    "storage_bucket": "menofeme-3c392.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976506056714:android:57259d22ba914ab0d42ff3",
+        "android_client_info": {
+          "package_name": "com.lavita.menofeme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976506056714-9t7b15poou1c819h0kq9rm4reohejlep.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfQpC8CFcF95ib__ECMS88AA7YijTKb9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976506056714-9t7b15poou1c819h0kq9rm4reohejlep.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

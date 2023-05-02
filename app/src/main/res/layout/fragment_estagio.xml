@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.ui.estagio.EstagioFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            tools:ignore="UselessParent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="25dp"
+                    android:hint="@string/txtUltima"
+                    android:textColorHint="@color/padrão"
+                    android:textSize="20sp"
+                    app:drawableLeftCompat="@drawable/ic_menstruacao" />
+
+                <RadioGroup
+                    android:id="@+id/rdgUltima"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbSim"
+                        android:layout_width="100dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+                        android:text="@string/rbSim"
+                        android:textColor="@color/black"
+                        tools:ignore="UsingOnClickInXml,DuplicateSpeakableTextCheck" />
+
+                    <RadioButton
+                        android:id="@+id/rbNao"
+                        android:layout_width="100dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+                        android:text="@string/rbNao"
+                        android:textColor="@color/black"
+                        tools:ignore="UsingOnClickInXml,DuplicateSpeakableTextCheck" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_gravity="center"
+                    android:hint="@string/txtAtraso"
+                    android:textColorHint="@color/padrão"
+                    android:textSize="20sp"
+                    app:drawableStartCompat="@drawable/ic_menstruacao" />
+
+                <RadioGroup
+                    android:id="@+id/rdgAtraso"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb2Sim"
+                        android:layout_width="100dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+                        android:text="@string/rbSim"
+                        android:textColor="@color/black"
+                        tools:ignore="UsingOnClickInXml,DuplicateSpeakableTextCheck"  />
+
+                    <RadioButton
+                        android:id="@+id/rb2Nao"
+                        android:layout_width="100dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="30dp"
+                        android:text="@string/rbNao"
+                        android:textColor="@color/black"
+                        tools:ignore="UsingOnClickInXml,DuplicateSpeakableTextCheck" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/txtFsh"
+                    android:layout_width="336dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:hint="@string/txtFsh"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/txtDegub"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:textColor="@color/padrão"
+                    android:textSize="25sp"
+                    android:visibility="invisible" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnAnalise"
+                    android:layout_width="131dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/btn1"
+                    android:text="@string/btnAnalisar"
+                    android:textColor="@color/padrão" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSaiba"
+                    android:layout_width="131dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/btn1"
+                    android:enabled="false"
+                    android:visibility="invisible"
+                    android:text="@string/btnSaiba"
+                    android:textColor="@color/padrão"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

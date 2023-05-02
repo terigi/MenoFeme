@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fundoApp"
+    tools:context=".view.Termos">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp"
+            tools:ignore="UselessParent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lblTermos"
+                    android:textColor="@color/padrão"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lblOla"
+                    android:textColor="@color/padrão"
+                    android:textSize="23sp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtTermo"
+                    android:textColor="@color/padrão"
+                    android:textSize="23sp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="center"/>
+
+                <CheckBox
+                    android:id="@+id/ckbTermos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnTermo"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="center"
+                    android:onClick="onTermosClicked"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnTermos"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/btn1"
+                    android:text="@string/btnTermoS"
+                    android:textColor="@color/padrão"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+
+</LinearLayout>

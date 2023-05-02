@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".view.ui.tcle1.TcleFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="70dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:text="@string/txtTcle"
+                android:textColor="@color/padrão"
+                android:textSize="18sp"/>
+            <com.github.barteksc.pdfviewer.PDFView
+                android:id="@+id/viewPdfTcle"
+                android:layout_width="350dp"
+                android:layout_height="580dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="35dp"
+                android:background="@color/white"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

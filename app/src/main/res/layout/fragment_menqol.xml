@@ -1,0 +1,1352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.ui.questionarios.MenqolFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/padrão"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:gravity="start"
+                    android:hint="@string/txtDefQuest"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="start"
+                    android:hint="@string/Linha1DefQuest1"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="start"
+                    android:hint="@string/Linha2DefQuest1"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="start"
+                    android:hint="@string/Linha3DefQuest1"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="start"
+                    android:hint="@string/Linha4DefQuest1"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="start"
+                    android:hint="@string/Linha5DefQuest1"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="start"
+                    android:hint="@string/Linha6DefQuest1"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="start"
+                    android:hint="@string/Linha7DefQuest1"
+                    android:textColorHint="@color/white"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scrollQuestionario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:hint="@string/txtQ1Q1"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:drawableStartCompat="@drawable/ic_menstruacao" />
+
+                    <RadioGroup
+                        android:id="@+id/rdgQ1Q1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/Q1Q1opt0"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt0"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q1opt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt1"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q1opt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt2"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q1opt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt3"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q1opt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt4"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q1opt5"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt5"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q1opt6"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt6"
+                            android:textColor="@color/black"/>
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:hint="@string/txtQ1Q2"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:drawableStartCompat="@drawable/ic_menstruacao" />
+
+                    <RadioGroup
+                        android:id="@+id/rdgQ1Q2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/Q1Q2opt0"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt0"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q2opt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt1"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q2opt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt2"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q2opt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt3"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q2opt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt4"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q2opt5"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt5"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q2opt6"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt6"
+                            android:textColor="@color/black"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:hint="@string/txtQ1Q3"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:drawableStartCompat="@drawable/ic_menstruacao" />
+
+                    <RadioGroup
+                        android:id="@+id/rdgQ1Q3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/Q1Q3opt0"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt0"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q3opt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt1"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q3opt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt2"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q3opt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt3"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q3opt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt4"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q3opt5"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt5"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q3opt6"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt6"
+                            android:textColor="@color/black"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:hint="@string/txtQ1Q4"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:drawableStartCompat="@drawable/ic_menstruacao" />
+
+                    <RadioGroup
+                        android:id="@+id/rdgQ1Q4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/Q1Q4opt0"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt0"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q4opt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt1"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q4opt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt2"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q4opt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt3"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q4opt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt4"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q4opt5"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt5"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q4opt6"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt6"
+                            android:textColor="@color/black"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:hint="@string/txtQ1Q5"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:drawableStartCompat="@drawable/ic_menstruacao" />
+
+                    <RadioGroup
+                        android:id="@+id/rdgQ1Q5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/Q1Q5opt0"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt0"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q5opt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt1"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q5opt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt2"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q5opt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt3"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q5opt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt4"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q5opt5"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt5"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q5opt6"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt6"
+                            android:textColor="@color/black"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:hint="@string/txtQ1Q6"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:drawableStartCompat="@drawable/ic_menstruacao" />
+
+                    <RadioGroup
+                        android:id="@+id/rdgQ1Q6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/Q1Q6opt0"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt0"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q6opt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt1"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q6opt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt2"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q6opt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt3"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q6opt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt4"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q6opt5"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt5"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q6opt6"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt6"
+                            android:textColor="@color/black"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:hint="@string/txtQ1Q7"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:drawableStartCompat="@drawable/ic_menstruacao" />
+
+                    <RadioGroup
+                        android:id="@+id/rdgQ1Q7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/Q1Q7opt0"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt0"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q7opt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt1"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q7opt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt2"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q7opt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt3"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q7opt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt4"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q7opt5"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt5"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q7opt6"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt6"
+                            android:textColor="@color/black"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:hint="@string/txtQ1Q8"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:drawableStartCompat="@drawable/ic_menstruacao"
+                        tools:ignore="TooManyViews" />
+
+                    <RadioGroup
+                        android:id="@+id/rdgQ1Q8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="TooManyViews">
+
+                        <RadioButton
+                            android:id="@+id/Q1Q8opt0"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt0"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q8opt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt1"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q8opt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt2"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q8opt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt3"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q8opt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt4"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q8opt5"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt5"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q8opt6"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt6"
+                            android:textColor="@color/black"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:hint="@string/txtQ1Q9"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:drawableStartCompat="@drawable/ic_menstruacao" />
+
+                    <RadioGroup
+                        android:id="@+id/rdgQ1Q9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/Q1Q9opt0"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt0"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q9opt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt1"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q9opt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt2"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q9opt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt3"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q9opt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt4"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q9opt5"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt5"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q9opt6"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt6"
+                            android:textColor="@color/black"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:hint="@string/txtQ1Q10"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:drawableStartCompat="@drawable/ic_menstruacao" />
+
+                    <RadioGroup
+                        android:id="@+id/rdgQ1Q10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/Q1Q10opt0"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt0"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q10opt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt1"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q10opt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt2"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q10opt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt3"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q10opt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt4"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q10opt5"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt5"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q10opt6"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt6"
+                            android:textColor="@color/black"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:hint="@string/txtQ1Q11"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:drawableStartCompat="@drawable/ic_menstruacao"/>
+
+                    <RadioGroup
+                        android:id="@+id/rdgQ1Q11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/Q1Q11opt0"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt0"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q11opt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt1"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q11opt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt2"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q11opt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt3"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q11opt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt4"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q11opt5"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt5"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q11opt6"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt6"
+                            android:textColor="@color/black"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:hint="@string/txtQ1Q12"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:drawableStartCompat="@drawable/ic_menstruacao" />
+
+                    <RadioGroup
+                        android:id="@+id/rdgQ1Q12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/Q1Q12opt0"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt0"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q12opt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt1"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q12opt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt2"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q12opt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt3"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q12opt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt4"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q12opt5"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt5"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q12opt6"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt6"
+                            android:textColor="@color/black"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:hint="@string/txtQ1Q13"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:drawableStartCompat="@drawable/ic_menstruacao"/>
+
+                    <RadioGroup
+                        android:id="@+id/rdgQ1Q13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/Q1Q13opt0"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt0"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q13opt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt1"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q13opt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt2"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q13opt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt3"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q13opt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt4"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q13opt5"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt5"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q13opt6"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt6"
+                            android:textColor="@color/black"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:hint="@string/txtQ1Q14"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:drawableStartCompat="@drawable/ic_menstruacao"/>
+
+                    <RadioGroup
+                        android:id="@+id/rdgQ1Q14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/Q1Q14opt0"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt0"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q14opt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt1"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q14opt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt2"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q14opt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt3"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q14opt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt4"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q14opt5"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt5"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q14opt6"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt6"
+                            android:textColor="@color/black"/>
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:hint="@string/txtQ1Q15"
+                        android:textColorHint="@color/black"
+                        android:textSize="20sp"
+                        app:drawableStartCompat="@drawable/ic_menstruacao" />
+
+                    <RadioGroup
+                        android:id="@+id/rdgQ1Q15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/Q1Q15opt0"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt0"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q15opt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt1"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q15opt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt2"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q15opt3"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt3"
+                            android:textColor="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/Q1Q15opt4"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt4"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q15opt5"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt5"
+                            android:textColor="@color/black"/>
+
+                        <RadioButton
+                            android:id="@+id/Q1Q15opt6"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/opt6"
+                            android:textColor="@color/black"/>
+                    </RadioGroup>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnProximoMenqol"
+                        android:layout_width="250dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/btn1"
+                        android:layout_gravity="center"
+                        android:text="@string/btnProximo"
+                        android:textColor="@color/padrão" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>
