@@ -23,7 +23,7 @@
                 android:layout_marginEnd="30dp"
                 android:gravity="center"
                 android:text="@string/txtAceitePrivacidade1"
-                android:textColor="@color/padrão"
+                android:textColor="@color/padrao"
                 android:textSize="18sp"/>
             <com.github.barteksc.pdfviewer.PDFView
                 android:id="@+id/viewPdfTcle"

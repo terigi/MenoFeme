@@ -30,7 +30,7 @@
                     android:layout_gravity="center"
                     android:hint="@string/app_name"
                     android:textColorHint="@color/black"
-                    android:textSize="20sp"/>
+                    android:textSize="23sp"/>
                 <TextView
                     android:id="@+id/txtResObs2"
                     android:layout_width="350dp"
@@ -42,7 +42,7 @@
                     android:layout_gravity="center"
                     android:hint="@string/app_name"
                     android:textColorHint="@color/black"
-                    android:textSize="20sp"/>
+                    android:textSize="23sp"/>
                 <TextView
                     android:id="@+id/txtResObs3"
                     android:layout_width="350dp"
@@ -54,7 +54,7 @@
                     android:layout_gravity="center"
                     android:hint="@string/app_name"
                     android:textColorHint="@color/black"
-                    android:textSize="20sp"/>
+                    android:textSize="23sp"/>
                 <TextView
                     android:id="@+id/txtResObs4"
                     android:layout_width="350dp"
@@ -66,7 +66,32 @@
                     android:layout_gravity="center"
                     android:hint="@string/app_name"
                     android:textColorHint="@color/black"
-                    android:textSize="20sp"/>
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/txtResObs5"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:hint="@string/app_name"
+                    android:textColorHint="@color/black"
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/txtClique"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/link_melhor_forma"
+                    android:textColor="@color/padrao"
+                    android:textColorLink="@color/padrao"
+                    android:textSize="23sp"/>
                 <TextView
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
@@ -76,7 +101,7 @@
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:hint="@string/linhaInfo"
-                    android:textColorHint="@color/padrão"
+                    android:textColorHint="@color/padrao"
                     android:textSize="25sp"/>
                 <ImageButton
                     android:id="@+id/btnHomeOrient"
@@ -84,6 +109,7 @@
                     android:layout_height="48dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
                     android:background="@drawable/btn2"
                     android:src="@drawable/ic_home"
                     tools:ignore="SpeakableTextPresentCheck" />

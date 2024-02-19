@@ -12,7 +12,7 @@
         tools:ignore="UselessParent">
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
             tools:ignore="UselessParent">
             <LinearLayout
@@ -28,6 +28,8 @@
                     android:textColorHint="@color/black"
                     android:inputType="text"
                     android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/padrao"
                     android:autofillHints=""
                     android:layout_marginTop="40dp"
                     android:layout_marginStart="25dp"
@@ -43,6 +45,8 @@
                     android:textColorHint="@color/black"
                     android:inputType="textEmailAddress"
                     android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/padrao"
                     android:autofillHints=""
                     android:layout_marginTop="40dp"
                     android:layout_marginStart="25dp"
@@ -53,14 +57,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginTop="35dp">
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginStart="25dp">
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:text="@string/txtNasc"
                         android:textSize="18sp"
                         android:textColor="@color/black"
-                        android:layout_marginStart="35dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="10dp"/>
 
                     <ImageButton
@@ -69,6 +75,7 @@
                         android:layout_height="48dp"
                         android:layout_marginStart="20dp"
                         android:background="@drawable/btn2"
+                        android:layout_marginTop="10dp"
                         android:src="@drawable/ic_nasc"
                         tools:ignore="ContentDescription,SpeakableTextPresentCheck"/>
                 </LinearLayout>
@@ -93,6 +100,8 @@
                     android:textColorHint="@color/black"
                     android:inputType="number"
                     android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/padrao"
                     android:autofillHints=""
                     android:layout_marginTop="25dp"
                     android:layout_marginStart="25dp"
@@ -108,6 +117,8 @@
                     android:textColorHint="@color/black"
                     android:inputType="text"
                     android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/padrao"
                     android:autofillHints=""
                     android:layout_marginTop="40dp"
                     android:layout_marginStart="25dp"
@@ -118,7 +129,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginTop="30dp">
+                    android:layout_marginTop="30dp"
+                    android:visibility="gone">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -132,43 +144,46 @@
                         android:id="@+id/menuEtnia"
                         android:layout_width="224dp"
                         android:layout_height="48dp"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginTop="10dp"
                         android:layout_marginStart="30dp"
                         android:contentDescription="@string/app_name"
                         android:spinnerMode="dialog"
+                        android:backgroundTint="@color/padrao"
                         tools:ignore="DuplicateSpeakableTextCheck" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginStart="35dp"
-                    android:layout_marginEnd="35dp">
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="50dp">
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/btnAlterar"
-                        android:layout_width="124dp"
+                        android:layout_width="140dp"
                         android:layout_height="48dp"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="0dp"
                         android:background="@drawable/btn1"
                         android:text="@string/btnAlterar"
-                        android:textSize="18sp"
+                        android:textSize="14sp"
                         android:textAllCaps="false"
-                        android:textColor="@color/padrão"
+                        android:textColor="@color/padrao"
                         android:layout_gravity="top"
                         android:layout_marginStart="10dp"/>
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/btnAtualizar"
-                        android:layout_width="124dp"
+                        android:layout_width="140dp"
                         android:layout_height="48dp"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="0dp"
                         android:background="@drawable/btn1"
                         android:text="@string/btnAtualizar"
-                        android:textSize="18sp"
+                        android:textSize="14sp"
                         android:textAllCaps="false"
-                        android:textColor="@color/padrão"
+                        android:textColor="@color/padrao"
                         android:layout_gravity="top"
-                        android:layout_marginStart="60dp"
+                        android:layout_marginStart="40dp"
                         android:layout_marginEnd="30dp"/>
             </LinearLayout>
             </LinearLayout>

@@ -29,7 +29,7 @@
                     android:layout_gravity="center"
                     android:hint="@string/app_name"
                     android:textColorHint="@color/black"
-                    android:textSize="20sp"/>
+                    android:textSize="23sp"/>
                 <TextView
                     android:id="@+id/txtResSint2"
                     android:layout_width="350dp"
@@ -41,7 +41,7 @@
                     android:layout_gravity="center"
                     android:hint="@string/app_name"
                     android:textColorHint="@color/black"
-                    android:textSize="20sp"/>
+                    android:textSize="23sp"/>
                 <TextView
                     android:id="@+id/txtResSint3"
                     android:layout_width="350dp"
@@ -53,7 +53,7 @@
                     android:layout_gravity="center"
                     android:hint="@string/app_name"
                     android:textColorHint="@color/black"
-                    android:textSize="20sp"/>
+                    android:textSize="23sp"/>
                 <TextView
                     android:id="@+id/txtResSint4"
                     android:layout_width="350dp"
@@ -65,7 +65,7 @@
                     android:layout_gravity="center"
                     android:hint="@string/app_name"
                     android:textColorHint="@color/black"
-                    android:textSize="20sp"/>
+                    android:textSize="23sp"/>
                 <TextView
                     android:id="@+id/txtResSint5"
                     android:layout_width="350dp"
@@ -77,7 +77,7 @@
                     android:layout_gravity="center"
                     android:hint="@string/app_name"
                     android:textColorHint="@color/black"
-                    android:textSize="20sp"/>
+                    android:textSize="23sp"/>
                 <TextView
                     android:id="@+id/txtResSint6"
                     android:layout_width="350dp"
@@ -89,7 +89,7 @@
                     android:layout_gravity="center"
                     android:hint="@string/app_name"
                     android:textColorHint="@color/black"
-                    android:textSize="20sp"/>
+                    android:textSize="23sp"/>
                 <TextView
                     android:id="@+id/txtResSint7"
                     android:layout_width="350dp"
@@ -101,7 +101,7 @@
                     android:layout_gravity="center"
                     android:hint="@string/app_name"
                     android:textColorHint="@color/black"
-                    android:textSize="20sp"/>
+                    android:textSize="23sp"/>
                 <TextView
                     android:id="@+id/txtResSint8"
                     android:layout_width="350dp"
@@ -113,7 +113,7 @@
                     android:layout_gravity="center"
                     android:hint="@string/app_name"
                     android:textColorHint="@color/black"
-                    android:textSize="20sp"/>
+                    android:textSize="23sp"/>
                 <TextView
                     android:id="@+id/txtResSint9"
                     android:layout_width="350dp"
@@ -125,7 +125,233 @@
                     android:layout_gravity="center"
                     android:hint="@string/app_name"
                     android:textColorHint="@color/black"
-                    android:textSize="20sp"/>
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/video_fadiga_1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/video_fadiga_1"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/link_fadiga_1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/link_fadiga_1"
+                    android:textColor="@color/padrao"
+                    android:textColorLink="@color/padrao"
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/video_fadiga_2"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/video_fadiga_2"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/link_fadiga_2"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/link_fadiga_2"
+                    android:textColor="@color/padrao"
+                    android:textColorLink="@color/padrao"
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/video_dores_1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/video_dores_1"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/link_dores_1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/link_dores_1"
+                    android:textColor="@color/padrao"
+                    android:textColorLink="@color/padrao"
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/video_dores_2"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/video_dores_2"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/link_dores_2"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/link_dores_2"
+                    android:textColor="@color/padrao"
+                    android:textColorLink="@color/padrao"
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/video_dores_3"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/video_dores_3"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/link_dores_3"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/link_dores_3"
+                    android:textColor="@color/padrao"
+                    android:textColorLink="@color/padrao"
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/video_dores_4"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/video_dores_4"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/link_dores_4"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/link_dores_4"
+                    android:textColor="@color/padrao"
+                    android:textColorLink="@color/padrao"
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/video_psico_1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/video_psico_1"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/link_psico_1_1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/link_psico_1_1"
+                    android:textColor="@color/padrao"
+                    android:textColorLink="@color/padrao"
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/link_psico_1_2"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/link_psico_1_2"
+                    android:textColor="@color/padrao"
+                    android:textColorLink="@color/padrao"
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/video_psico_2"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/video_psico_2"
+                    android:textColor="@color/black"
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/link_psico_2_1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/link_psico_2_1"
+                    android:textColor="@color/padrao"
+                    android:textColorLink="@color/padrao"
+                    android:textSize="23sp"/>
+                <TextView
+                    android:id="@+id/link_psico_2_2"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/link_psico_2_2"
+                    android:textColor="@color/padrao"
+                    android:textColorLink="@color/padrao"
+                    android:textSize="23sp"/>
                 <TextView
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
@@ -135,7 +361,7 @@
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:hint="@string/linhaInfo"
-                    android:textColorHint="@color/padrão"
+                    android:textColorHint="@color/padrao"
                     android:textSize="25sp"/>
                 <ImageButton
                     android:id="@+id/btnHomeSint"
@@ -143,6 +369,7 @@
                     android:layout_height="48dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
                     android:background="@drawable/btn2"
                     android:src="@drawable/ic_home"
                     tools:ignore="SpeakableTextPresentCheck" />

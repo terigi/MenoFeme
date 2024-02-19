@@ -1,6 +1,10 @@
 package com.lavita.menofeme.view.ui.orientacao
 
+import android.content.ActivityNotFoundException
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.text.method.LinkMovementMethod
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -19,6 +23,8 @@ class ResultadoOrientacaoFragment : Fragment() {
     private lateinit var txtResObs2: TextView
     private lateinit var txtResObs3: TextView
     private lateinit var txtResObs4: TextView
+    private lateinit var txtResObs5: TextView
+    private lateinit var txtClique: TextView
     private lateinit var linha1Duv1: String
     private lateinit var linha2Duv1: String
     private lateinit var linha3Duv1: String
@@ -33,6 +39,8 @@ class ResultadoOrientacaoFragment : Fragment() {
     private lateinit var linha2Duv4: String
     private lateinit var linha3Duv4: String
     private lateinit var linha4Duv4: String
+    private lateinit var linha4Duv5: String
+    //private lateinit var link_forma: String
     private lateinit var btnHomeOrient: ImageButton
     private lateinit var homeFragment: HomeFragment
 
@@ -52,6 +60,9 @@ class ResultadoOrientacaoFragment : Fragment() {
         txtResObs3.setTextColor(resources.getColor(R.color.black))
         txtResObs4 = pegarView.findViewById(R.id.txtResObs4)
         txtResObs4.setTextColor(resources.getColor(R.color.black))
+        txtResObs5 = pegarView.findViewById(R.id.txtResObs5)
+        txtResObs5.setTextColor(resources.getColor(R.color.black))
+        txtClique = pegarView.findViewById(R.id.txtClique)
         btnHomeOrient = pegarView.findViewById(R.id.btnHomeOrient)
         homeFragment = HomeFragment()
         linha1Duv1 = getString(R.string.txtObs1)
@@ -68,6 +79,9 @@ class ResultadoOrientacaoFragment : Fragment() {
         linha2Duv4 = getString(R.string.Linha1Duv4)
         linha3Duv4 = getString(R.string.Linha2Duv4)
         linha4Duv4 = getString(R.string.Linha3Duv4)
+        linha4Duv5 = getString(R.string.Linha3Duv5)
+        //link_forma = getString(R.string.link_melhor_forma)
+        txtClique.movementMethod = LinkMovementMethod.getInstance()
 
         setFragmentResultListener("requestKey") { _, bundle ->
             val result = bundle.getString("Orientacao")
@@ -76,13 +90,17 @@ class ResultadoOrientacaoFragment : Fragment() {
                 txtResObs2.text = linha2Duv1
                 txtResObs3.text = linha3Duv1
                 txtResObs4.text = linha4Duv1
+                txtResObs5.visibility = View.GONE
+                txtClique.visibility = View.GONE
             }
 
             if (result.toString().toInt() == 2) {
                 txtResObs1.text = linha1Duv2
                 txtResObs2.text = linha2Duv2
-                txtResObs3.visibility = View.INVISIBLE
-                txtResObs4.visibility = View.INVISIBLE
+                txtResObs3.visibility = View.GONE
+                txtResObs4.visibility = View.GONE
+                txtResObs5.visibility = View.GONE
+                txtClique.visibility = View.GONE
             }
 
             if (result.toString().toInt() == 3) {
@@ -90,12 +108,15 @@ class ResultadoOrientacaoFragment : Fragment() {
                 txtResObs2.text = linha2Duv3
                 txtResObs3.text = linha3Duv3
                 txtResObs4.text = linha4Duv3
+                txtResObs5.visibility = View.GONE
+                txtClique.visibility = View.GONE
             }
             if (result.toString().toInt() == 4) {
                 txtResObs1.text = linha1Duv4
                 txtResObs2.text = linha2Duv4
                 txtResObs3.text = linha3Duv4
                 txtResObs4.text = linha4Duv4
+                txtResObs5.text = linha4Duv5
             }
         }
         btnHomeOrient.setOnClickListener{
@@ -108,5 +129,14 @@ class ResultadoOrientacaoFragment : Fragment() {
         val fT = requireActivity().supportFragmentManager.beginTransaction()
         fT.replace(R.id.nav_host_fragment_content_principal, fragment)
         fT.commit()
+    }
+    private fun openYoutubeLink(youtubeID: String) {
+        val intentApp = Intent(Intent.ACTION_VIEW, Uri.parse("vnd.youtube:" + youtubeID))
+        val intentBrowser = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com/watch?v=" + youtubeID))
+        try {
+            this.startActivity(intentApp)
+        } catch (ex: ActivityNotFoundException) {
+            this.startActivity(intentBrowser)
+        }
     }
 }

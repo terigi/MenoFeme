@@ -1,5 +1,8 @@
 package com.lavita.menofeme.view.ui.estagio
 
+import android.content.ActivityNotFoundException
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -68,7 +71,7 @@ class ResultadoEstagioFragment : Fragment() {
                 txtResEst1.text = linha1Est1
                 txtResEst2.text = linha2Est1
                 txtResEst3.text = linha3Est1
-                txtResEst4.visibility = View.INVISIBLE
+                txtResEst4.visibility = View.GONE
             }
             if(result.toString().toInt()== 2){
                 txtResEst1.text = linha1Est2
@@ -93,5 +96,15 @@ class ResultadoEstagioFragment : Fragment() {
         val fT = requireActivity().supportFragmentManager.beginTransaction()
         fT.replace(R.id.nav_host_fragment_content_principal, fragment)
         fT.commit()
+    }
+
+    private fun openYoutubeLink(youtubeID: String) {
+        val intentApp = Intent(Intent.ACTION_VIEW, Uri.parse("vnd.youtube:" + youtubeID))
+        val intentBrowser = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com/watch?v=" + youtubeID))
+        try {
+            this.startActivity(intentApp)
+        } catch (ex: ActivityNotFoundException) {
+            this.startActivity(intentBrowser)
+        }
     }
 }

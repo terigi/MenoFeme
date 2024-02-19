@@ -24,7 +24,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/padrão"
+                android:background="@color/padrao"
                 android:orientation="vertical">
 
                 <TextView
@@ -121,7 +121,7 @@
 
                     <TextView
                         android:layout_width="350dp"
-                        android:layout_height="48dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="20dp"
                         android:gravity="center"
@@ -200,7 +200,7 @@
                     </RadioGroup>
                     <TextView
                         android:layout_width="350dp"
-                        android:layout_height="48dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="20dp"
                         android:gravity="center"
@@ -281,7 +281,7 @@
 
                     <TextView
                         android:layout_width="350dp"
-                        android:layout_height="48dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="20dp"
                         android:gravity="center"
@@ -362,7 +362,7 @@
 
                     <TextView
                         android:layout_width="350dp"
-                        android:layout_height="48dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="20dp"
                         android:gravity="center"
@@ -443,7 +443,7 @@
 
                     <TextView
                         android:layout_width="350dp"
-                        android:layout_height="48dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="20dp"
                         android:gravity="center"
@@ -524,7 +524,7 @@
 
                     <TextView
                         android:layout_width="350dp"
-                        android:layout_height="48dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="20dp"
                         android:gravity="center"
@@ -605,7 +605,7 @@
 
                     <TextView
                         android:layout_width="350dp"
-                        android:layout_height="48dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="20dp"
                         android:gravity="center"
@@ -686,7 +686,7 @@
 
                     <TextView
                         android:layout_width="350dp"
-                        android:layout_height="48dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="20dp"
                         android:gravity="center"
@@ -769,7 +769,7 @@
 
                     <TextView
                         android:layout_width="350dp"
-                        android:layout_height="48dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="20dp"
                         android:gravity="center"
@@ -850,7 +850,7 @@
 
                     <TextView
                         android:layout_width="350dp"
-                        android:layout_height="48dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="20dp"
                         android:gravity="center"
@@ -931,7 +931,7 @@
 
                     <TextView
                         android:layout_width="350dp"
-                        android:layout_height="48dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="20dp"
                         android:gravity="center"
@@ -1012,7 +1012,7 @@
 
                     <TextView
                         android:layout_width="350dp"
-                        android:layout_height="48dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="20dp"
                         android:gravity="center"
@@ -1093,7 +1093,7 @@
 
                     <TextView
                         android:layout_width="350dp"
-                        android:layout_height="48dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="20dp"
                         android:gravity="center"
@@ -1174,7 +1174,7 @@
 
                     <TextView
                         android:layout_width="350dp"
-                        android:layout_height="48dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="20dp"
                         android:gravity="center"
@@ -1255,7 +1255,7 @@
 
                     <TextView
                         android:layout_width="350dp"
-                        android:layout_height="48dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="20dp"
                         android:gravity="center"
@@ -1341,7 +1341,7 @@
                         android:background="@drawable/btn1"
                         android:layout_gravity="center"
                         android:text="@string/btnProximo"
-                        android:textColor="@color/padrão" />
+                        android:textColor="@color/padrao" />
 
                 </LinearLayout>
             </ScrollView>

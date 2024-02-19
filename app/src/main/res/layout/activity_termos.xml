@@ -24,7 +24,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/lblTermos"
-                    android:textColor="@color/padrão"
+                    android:textColor="@color/padrao"
                     android:textSize="22sp"
                     android:textStyle="bold"
                     android:layout_marginStart="30dp"
@@ -35,10 +35,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/lblOla"
-                    android:textColor="@color/padrão"
-                    android:textSize="23sp"
+                    android:textColor="@color/padrao"
+                    android:textSize="22sp"
                     android:layout_marginTop="30dp"
-                    android:layout_marginStart="50dp"
+                    android:layout_marginStart="30dp"
                     android:layout_marginEnd="30dp"
                     android:gravity="center"/>
 
@@ -46,12 +46,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/txtTermo"
-                    android:textColor="@color/padrão"
-                    android:textSize="23sp"
+                    android:textColor="@color/padrao"
+                    android:textSize="22sp"
                     android:layout_marginTop="22dp"
-                    android:layout_marginStart="50dp"
+                    android:layout_marginStart="30dp"
                     android:layout_marginEnd="30dp"
-                    android:gravity="center"/>
+                    android:justificationMode="inter_word"/>
 
                 <CheckBox
                     android:id="@+id/ckbTermos"
@@ -59,21 +59,24 @@
                     android:layout_height="wrap_content"
                     android:text="@string/btnTermo"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:layout_marginTop="30dp"
-                    android:layout_marginStart="50dp"
+                    android:layout_marginStart="30dp"
                     android:layout_marginEnd="30dp"
-                    android:gravity="center"
-                    android:onClick="onTermosClicked"/>
+                    android:onClick="onTermosClicked"
+                    android:justificationMode="inter_word"/>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnTermos"
-                    android:layout_width="150dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="20dp"
                     android:background="@drawable/btn1"
                     android:text="@string/btnTermoS"
-                    android:textColor="@color/padrão"
+                    android:textColor="@color/padrao"
                     android:layout_gravity="center" />
             </LinearLayout>
         </ScrollView>

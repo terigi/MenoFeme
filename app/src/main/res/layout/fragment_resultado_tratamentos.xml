@@ -30,7 +30,7 @@
                     android:layout_gravity="center"
                     android:hint="@string/app_name"
                     android:textColorHint="@color/black"
-                    android:textSize="20sp"/>
+                    android:textSize="23sp"/>
                 <TextView
                     android:id="@+id/txtResTrat2"
                     android:layout_width="350dp"
@@ -42,7 +42,7 @@
                     android:layout_gravity="center"
                     android:hint="@string/app_name"
                     android:textColorHint="@color/black"
-                    android:textSize="20sp"/>
+                    android:textSize="23sp"/>
                 <TextView
                     android:layout_width="350dp"
                     android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:hint="@string/linhaInfo"
-                    android:textColorHint="@color/padrão"
+                    android:textColorHint="@color/padrao"
                     android:textSize="25sp"/>
                 <ImageButton
                     android:id="@+id/btnHomeTrat"
@@ -60,6 +60,7 @@
                     android:layout_height="48dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
                     android:background="@drawable/btn2"
                     android:src="@drawable/ic_home"
                     tools:ignore="SpeakableTextPresentCheck"/>

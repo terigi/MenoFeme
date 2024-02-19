@@ -17,7 +17,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/padrão"
+            android:background="@color/padrao"
             app:popupTheme="@style/Theme.MenoFeme.PopupOverlay" />
 
     </com.google.android.material.appbar.AppBarLayout>

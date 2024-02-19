@@ -1,6 +1,10 @@
 package com.lavita.menofeme.view.ui.sintomas
 
+import android.content.ActivityNotFoundException
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
+import android.text.method.LinkMovementMethod
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -25,6 +29,26 @@ class ResultadoSintomasFragment : Fragment() {
     private lateinit var txtResSint7: TextView
     private lateinit var txtResSint8: TextView
     private lateinit var txtResSint9: TextView
+    private lateinit var video_fadiga_1: TextView
+    private lateinit var link_fadiga_1: TextView
+    private lateinit var video_fadiga_2: TextView
+    private lateinit var link_fadiga_2: TextView
+    private lateinit var video_dores_1: TextView
+    private lateinit var link_dores_1: TextView
+    private lateinit var video_dores_2: TextView
+    private lateinit var link_dores_2: TextView
+    private lateinit var video_dores_3: TextView
+    private lateinit var link_dores_3: TextView
+    private lateinit var video_dores_4: TextView
+    private lateinit var link_dores_4: TextView
+    private lateinit var video_psico_1: TextView
+    private lateinit var link_psico_1_1: TextView
+    private lateinit var link_psico_1_2: TextView
+    private lateinit var video_psico_2: TextView
+    private lateinit var link_psico_2_1: TextView
+    private lateinit var link_psico_2_2: TextView
+
+
     private lateinit var Linha1Sint1: String
     private lateinit var Linha2Sint1: String
     private lateinit var Linha3Sint1: String
@@ -81,7 +105,8 @@ class ResultadoSintomasFragment : Fragment() {
     private lateinit var Linha5Sint8: String
     private lateinit var Linha6Sint8: String
     private lateinit var btnHomeSint: ImageButton
-    private lateinit var homeFragment: HomeFragment
+    private lateinit var sintomasFragment: SintomasFragment
+
 
 
     override fun onCreateView(
@@ -109,6 +134,51 @@ class ResultadoSintomasFragment : Fragment() {
         txtResSint8.setTextColor(resources.getColor(R.color.black))
         txtResSint9 = pegarView.findViewById(R.id.txtResSint9)
         txtResSint9.setTextColor(resources.getColor(R.color.black))
+
+        video_fadiga_1 = pegarView.findViewById(R.id.video_fadiga_1)
+        video_fadiga_1.setTextColor(resources.getColor(R.color.black))
+        link_fadiga_1 = pegarView.findViewById(R.id.link_fadiga_1)
+        //link_fadiga_1.setTextColor(resources.getColor(R.color.blue))
+
+        video_fadiga_2 = pegarView.findViewById(R.id.video_fadiga_2)
+        video_fadiga_2.setTextColor(resources.getColor(R.color.black))
+        link_fadiga_2 = pegarView.findViewById(R.id.link_fadiga_2)
+        //link_fadiga_2.setTextColor(resources.getColor(R.color.blue))
+
+        video_dores_1 = pegarView.findViewById(R.id.video_dores_1)
+        video_dores_1.setTextColor(resources.getColor(R.color.black))
+        link_dores_1 = pegarView.findViewById(R.id.link_dores_1)
+        //link_dores_1.setTextColor(resources.getColor(R.color.blue))
+
+        video_dores_2 = pegarView.findViewById(R.id.video_dores_2)
+        video_dores_2.setTextColor(resources.getColor(R.color.black))
+        link_dores_2 = pegarView.findViewById(R.id.link_dores_2)
+        //link_dores_2.setTextColor(resources.getColor(R.color.blue))
+
+        video_dores_3 = pegarView.findViewById(R.id.video_dores_3)
+        video_dores_3.setTextColor(resources.getColor(R.color.black))
+        link_dores_3 = pegarView.findViewById(R.id.link_dores_3)
+        //link_dores_3.setTextColor(resources.getColor(R.color.blue))
+
+        video_dores_4 = pegarView.findViewById(R.id.video_dores_4)
+        video_dores_4.setTextColor(resources.getColor(R.color.black))
+        link_dores_4 = pegarView.findViewById(R.id.link_dores_4)
+        //link_dores_4.setTextColor(resources.getColor(R.color.blue))
+
+        video_psico_1 = pegarView.findViewById(R.id.video_psico_1)
+        video_psico_1.setTextColor(resources.getColor(R.color.black))
+        link_psico_1_1 = pegarView.findViewById(R.id.link_psico_1_1)
+        //link_psico_1_1.setTextColor(resources.getColor(R.color.blue))
+        link_psico_1_2 = pegarView.findViewById(R.id.link_psico_1_2)
+        //link_psico_1_2.setTextColor(resources.getColor(R.color.blue))
+
+        video_psico_2 = pegarView.findViewById(R.id.video_psico_2)
+        video_psico_2.setTextColor(resources.getColor(R.color.black))
+        link_psico_2_1 = pegarView.findViewById(R.id.link_psico_2_1)
+        //link_psico_2_1.setTextColor(resources.getColor(R.color.blue))
+        link_psico_2_2 = pegarView.findViewById(R.id.link_psico_2_2)
+        //link_psico_2_2.setTextColor(resources.getColor(R.color.blue))
+
         Linha1Sint1 = getString(R.string.Linha1Sint1)
         Linha2Sint1 = getString(R.string.Linha2Sint1)
         Linha3Sint1 = getString(R.string.Linha3Sint1)
@@ -158,6 +228,7 @@ class ResultadoSintomasFragment : Fragment() {
         Linha4Sint7 = getString(R.string.Linha4Sint7)
         Linha5Sint7 = getString(R.string.Linha5Sint7)
         Linha6Sint7 = getString(R.string.Linha6Sint7)
+
         Linha1Sint8 = getString(R.string.Linha1Sint8)
         Linha2Sint8 = getString(R.string.Linha2Sint8)
         Linha3Sint8 = getString(R.string.Linha3Sint8)
@@ -165,8 +236,19 @@ class ResultadoSintomasFragment : Fragment() {
         Linha5Sint8 = getString(R.string.Linha5Sint8)
         Linha6Sint8 = getString(R.string.Linha6Sint8)
 
+        link_fadiga_1.movementMethod = LinkMovementMethod.getInstance()
+        link_fadiga_2.movementMethod = LinkMovementMethod.getInstance()
+        link_dores_1.movementMethod = LinkMovementMethod.getInstance()
+        link_dores_2.movementMethod = LinkMovementMethod.getInstance()
+        link_dores_3.movementMethod = LinkMovementMethod.getInstance()
+        link_dores_4.movementMethod = LinkMovementMethod.getInstance()
+        link_psico_1_1.movementMethod = LinkMovementMethod.getInstance()
+        link_psico_1_2.movementMethod = LinkMovementMethod.getInstance()
+        link_psico_2_1.movementMethod = LinkMovementMethod.getInstance()
+        link_psico_2_2.movementMethod = LinkMovementMethod.getInstance()
+
         btnHomeSint= pegarView.findViewById(R.id.btnHomeSint)
-        homeFragment = HomeFragment()
+        sintomasFragment = SintomasFragment()
 
         setFragmentResultListener("requestKey") { _, bundle ->
             val result = bundle.getString("Sintomas")
@@ -180,8 +262,27 @@ class ResultadoSintomasFragment : Fragment() {
                 txtResSint7.text = Linha7Sint1
                 txtResSint8.text = Linha8Sint1
                 txtResSint9.text = Linha9Sint1
+
+                video_fadiga_1.visibility = View.GONE
+                link_fadiga_1.visibility = View.GONE
+                video_fadiga_2.visibility = View.GONE
+                link_fadiga_2.visibility = View.GONE
+                video_dores_1.visibility = View.GONE
+                link_dores_1.visibility = View.GONE
+                video_dores_2.visibility = View.GONE
+                link_dores_2.visibility = View.GONE
+                video_dores_3.visibility = View.GONE
+                link_dores_3.visibility = View.GONE
+                video_dores_4.visibility = View.GONE
+                link_dores_4.visibility = View.GONE
+                video_psico_1.visibility = View.GONE
+                link_psico_1_1.visibility = View.GONE
+                link_psico_1_2.visibility = View.GONE
+                video_psico_2.visibility = View.GONE
+                link_psico_2_1.visibility = View.GONE
+                link_psico_2_2.visibility = View.GONE
             }
-            if(result.toString().toInt() == 2){
+            else if(result.toString().toInt() == 2){
                 txtResSint1.text = Linha1Sint2
                 txtResSint2.text = Linha2Sint2
                 txtResSint3.text = Linha3Sint2
@@ -189,11 +290,30 @@ class ResultadoSintomasFragment : Fragment() {
                 txtResSint5.text = Linha5Sint2
                 txtResSint6.text = Linha6Sint2
                 txtResSint7.text = Linha7Sint2
-                txtResSint8.visibility = View.INVISIBLE
-                txtResSint9.visibility = View.INVISIBLE
+                txtResSint8.visibility = View.GONE
+                txtResSint9.visibility = View.GONE
+
+                video_fadiga_1.visibility = View.GONE
+                link_fadiga_1.visibility = View.GONE
+                video_fadiga_2.visibility = View.GONE
+                link_fadiga_2.visibility = View.GONE
+                video_dores_1.visibility = View.GONE
+                link_dores_1.visibility = View.GONE
+                video_dores_2.visibility = View.GONE
+                link_dores_2.visibility = View.GONE
+                video_dores_3.visibility = View.GONE
+                link_dores_3.visibility = View.GONE
+                video_dores_4.visibility = View.GONE
+                link_dores_4.visibility = View.GONE
+                video_psico_1.visibility = View.GONE
+                link_psico_1_1.visibility = View.GONE
+                link_psico_1_2.visibility = View.GONE
+                video_psico_2.visibility = View.GONE
+                link_psico_2_1.visibility = View.GONE
+                link_psico_2_2.visibility = View.GONE
             }
 
-            if(result.toString().toInt() == 3){
+            else if(result.toString().toInt() == 3){
                 txtResSint1.text = Linha1Sint3
                 txtResSint2.text = Linha2Sint3
                 txtResSint3.text = Linha3Sint3
@@ -201,11 +321,30 @@ class ResultadoSintomasFragment : Fragment() {
                 txtResSint5.text = Linha5Sint3
                 txtResSint6.text = Linha6Sint3
                 txtResSint7.text = Linha7Sint3
-                txtResSint8.visibility = View.INVISIBLE
-                txtResSint9.visibility = View.INVISIBLE
+                txtResSint8.visibility = View.GONE
+                txtResSint9.visibility = View.GONE
+
+                video_fadiga_1.visibility = View.GONE
+                link_fadiga_1.visibility = View.GONE
+                video_fadiga_2.visibility = View.GONE
+                link_fadiga_2.visibility = View.GONE
+                video_dores_1.visibility = View.GONE
+                link_dores_1.visibility = View.GONE
+                video_dores_2.visibility = View.GONE
+                link_dores_2.visibility = View.GONE
+                video_dores_3.visibility = View.GONE
+                link_dores_3.visibility = View.GONE
+                video_dores_4.visibility = View.GONE
+                link_dores_4.visibility = View.GONE
+                video_psico_1.visibility = View.GONE
+                link_psico_1_1.visibility = View.GONE
+                link_psico_1_2.visibility = View.GONE
+                video_psico_2.visibility = View.GONE
+                link_psico_2_1.visibility = View.GONE
+                link_psico_2_2.visibility = View.GONE
             }
 
-            if(result.toString().toInt() == 4){
+            else if(result.toString().toInt() == 4){
                 txtResSint1.text = Linha1Sint4
                 txtResSint2.text = Linha2Sint4
                 txtResSint3.text = Linha3Sint4
@@ -213,23 +352,57 @@ class ResultadoSintomasFragment : Fragment() {
                 txtResSint5.text = Linha5Sint4
                 txtResSint6.text = Linha6Sint4
                 txtResSint7.text = Linha7Sint4
-                txtResSint8.visibility = View.INVISIBLE
-                txtResSint9.visibility = View.INVISIBLE
+                txtResSint8.visibility = View.GONE
+                txtResSint9.visibility = View.GONE
+
+                video_dores_1.visibility = View.GONE
+                link_dores_1.visibility = View.GONE
+                video_dores_2.visibility = View.GONE
+                link_dores_2.visibility = View.GONE
+                video_dores_3.visibility = View.GONE
+                link_dores_3.visibility = View.GONE
+                video_dores_4.visibility = View.GONE
+                link_dores_4.visibility = View.GONE
+                video_psico_1.visibility = View.GONE
+                link_psico_1_1.visibility = View.GONE
+                link_psico_1_2.visibility = View.GONE
+                video_psico_2.visibility = View.GONE
+                link_psico_2_1.visibility = View.GONE
+                link_psico_2_2.visibility = View.GONE
             }
 
-            if(result.toString().toInt() == 5){
+            else if(result.toString().toInt() == 5){
                 txtResSint1.text = Linha1Sint5
                 txtResSint2.text = Linha2Sint5
                 txtResSint3.text = Linha3Sint5
                 txtResSint4.text = Linha4Sint5
                 txtResSint5.text = Linha5Sint5
                 txtResSint6.text = Linha6Sint5
-                txtResSint7.visibility = View.INVISIBLE
-                txtResSint8.visibility = View.INVISIBLE
-                txtResSint9.visibility = View.INVISIBLE
+                txtResSint7.visibility = View.GONE
+                txtResSint8.visibility = View.GONE
+                txtResSint9.visibility = View.GONE
+
+                video_fadiga_1.visibility = View.GONE
+                link_fadiga_1.visibility = View.GONE
+                video_fadiga_2.visibility = View.GONE
+                link_fadiga_2.visibility = View.GONE
+                video_dores_1.visibility = View.GONE
+                link_dores_1.visibility = View.GONE
+                video_dores_2.visibility = View.GONE
+                link_dores_2.visibility = View.GONE
+                video_dores_3.visibility = View.GONE
+                link_dores_3.visibility = View.GONE
+                video_dores_4.visibility = View.GONE
+                link_dores_4.visibility = View.GONE
+                video_psico_1.visibility = View.GONE
+                link_psico_1_1.visibility = View.GONE
+                link_psico_1_2.visibility = View.GONE
+                video_psico_2.visibility = View.GONE
+                link_psico_2_1.visibility = View.GONE
+                link_psico_2_2.visibility = View.GONE
             }
 
-            if(result.toString().toInt() == 6){
+            else if(result.toString().toInt() == 6){
                 txtResSint1.text = Linha1Sint6
                 txtResSint2.text = Linha2Sint6
                 txtResSint3.text = Linha3Sint6
@@ -237,35 +410,78 @@ class ResultadoSintomasFragment : Fragment() {
                 txtResSint5.text = Linha5Sint6
                 txtResSint6.text = Linha6Sint6
                 txtResSint7.text = Linha7Sint6
-                txtResSint8.visibility = View.INVISIBLE
-                txtResSint9.visibility = View.INVISIBLE
+                txtResSint8.visibility = View.GONE
+                txtResSint9.visibility = View.GONE
+
+                video_fadiga_1.visibility = View.GONE
+                link_fadiga_1.visibility = View.GONE
+                video_fadiga_2.visibility = View.GONE
+                link_fadiga_2.visibility = View.GONE
+                video_dores_1.visibility = View.GONE
+                link_dores_1.visibility = View.GONE
+                video_dores_2.visibility = View.GONE
+                link_dores_2.visibility = View.GONE
+                video_dores_3.visibility = View.GONE
+                link_dores_3.visibility = View.GONE
+                video_dores_4.visibility = View.GONE
+                link_dores_4.visibility = View.GONE
             }
-            if(result.toString().toInt() == 7){
+            else if(result.toString().toInt() == 7){
                 txtResSint1.text = Linha1Sint7
                 txtResSint2.text = Linha2Sint7
                 txtResSint3.text = Linha3Sint7
                 txtResSint4.text = Linha4Sint7
                 txtResSint5.text = Linha5Sint7
                 txtResSint6.text = Linha6Sint7
-                txtResSint7.visibility = View.INVISIBLE
-                txtResSint8.visibility = View.INVISIBLE
-                txtResSint9.visibility = View.INVISIBLE
+                txtResSint7.visibility = View.GONE
+                txtResSint8.visibility = View.GONE
+                txtResSint9.visibility = View.GONE
+
+                video_fadiga_1.visibility = View.GONE
+                link_fadiga_1.visibility = View.GONE
+                video_fadiga_2.visibility = View.GONE
+                link_fadiga_2.visibility = View.GONE
+                video_psico_1.visibility = View.GONE
+                link_psico_1_1.visibility = View.GONE
+                link_psico_1_2.visibility = View.GONE
+                video_psico_2.visibility = View.GONE
+                link_psico_2_1.visibility = View.GONE
+                link_psico_2_2.visibility = View.GONE
             }
-            if(result.toString().toInt() == 8){
+            else if(result.toString().toInt() == 8){
                 txtResSint1.text = Linha1Sint8
                 txtResSint2.text = Linha2Sint8
                 txtResSint3.text = Linha3Sint8
                 txtResSint4.text = Linha4Sint8
                 txtResSint5.text = Linha5Sint8
                 txtResSint6.text = Linha6Sint8
-                txtResSint7.visibility = View.INVISIBLE
-                txtResSint8.visibility = View.INVISIBLE
-                txtResSint9.visibility = View.INVISIBLE
+                txtResSint7.visibility = View.GONE
+                txtResSint8.visibility = View.GONE
+                txtResSint9.visibility = View.GONE
+
+                video_fadiga_1.visibility = View.GONE
+                link_fadiga_1.visibility = View.GONE
+                video_fadiga_2.visibility = View.GONE
+                link_fadiga_2.visibility = View.GONE
+                video_dores_1.visibility = View.GONE
+                link_dores_1.visibility = View.GONE
+                video_dores_2.visibility = View.GONE
+                link_dores_2.visibility = View.GONE
+                video_dores_3.visibility = View.GONE
+                link_dores_3.visibility = View.GONE
+                video_dores_4.visibility = View.GONE
+                link_dores_4.visibility = View.GONE
+                video_psico_1.visibility = View.GONE
+                link_psico_1_1.visibility = View.GONE
+                link_psico_1_2.visibility = View.GONE
+                video_psico_2.visibility = View.GONE
+                link_psico_2_1.visibility = View.GONE
+                link_psico_2_2.visibility = View.GONE
             }
         }
 
         btnHomeSint.setOnClickListener{
-            setFragment(homeFragment)
+            setFragment(sintomasFragment)
         }
         return pegarView
     }
@@ -273,5 +489,14 @@ class ResultadoSintomasFragment : Fragment() {
         val fT = requireActivity().supportFragmentManager.beginTransaction()
         fT.replace(R.id.nav_host_fragment_content_principal, fragment)
         fT.commit()
+    }
+    private fun openYoutubeLink(youtubeID: String) {
+        val intentApp = Intent(Intent.ACTION_VIEW, Uri.parse("vnd.youtube:" + youtubeID))
+        val intentBrowser = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com/watch?v=" + youtubeID))
+        try {
+            this.startActivity(intentApp)
+        } catch (ex: ActivityNotFoundException) {
+            this.startActivity(intentBrowser)
+        }
     }
 }

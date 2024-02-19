@@ -7,7 +7,18 @@
     android:orientation="vertical"
     android:background="@color/white"
     tools:context=".view.Cadastrar">
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+        <ImageButton
+            android:id="@+id/btnVoltar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/btnvoltar"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck"/>
+    </LinearLayout>
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -30,8 +41,10 @@
                     android:textColorHint="@color/black"
                     android:inputType="text"
                     android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/padrao"
                     android:autofillHints=""
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginStart="25dp"
                     android:layout_marginEnd="25dp"
                     tools:ignore="VisualLintTextFieldSize" />
@@ -45,8 +58,10 @@
                     android:textColorHint="@color/black"
                     android:inputType="textEmailAddress"
                     android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/padrao"
                     android:autofillHints=""
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginStart="25dp"
                     android:layout_marginEnd="25dp"
                     tools:ignore="VisualLintTextFieldSize" />
@@ -60,8 +75,10 @@
                     android:textColorHint="@color/black"
                     android:inputType="numberPassword"
                     android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/padrao"
                     android:autofillHints=""
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginStart="25dp"
                     android:layout_marginEnd="25dp"
                     tools:ignore="VisualLintTextFieldSize" />
@@ -70,14 +87,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginTop="35dp">
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginStart="25dp">
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:text="@string/txtNasc"
                         android:textSize="18sp"
                         android:textColor="@color/black"
-                        android:layout_marginStart="35dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="10dp"/>
 
                     <ImageButton
@@ -86,6 +105,7 @@
                         android:layout_height="48dp"
                         android:layout_marginStart="20dp"
                         android:background="@drawable/btn2"
+                        android:layout_marginTop="10dp"
                         android:src="@drawable/ic_nasc"
                         tools:ignore="ContentDescription,SpeakableTextPresentCheck"/>
                 </LinearLayout>
@@ -105,13 +125,15 @@
                     android:id="@+id/txtPrimeira"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:padding="13dp"
+                    android:padding="16dp"
                     android:hint="@string/hintPrimeira"
                     android:textColorHint="@color/black"
                     android:inputType="number"
                     android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/padrao"
                     android:autofillHints=""
-                    android:layout_marginTop="25dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginStart="25dp"
                     android:layout_marginEnd="25dp"
                     tools:ignore="VisualLintTextFieldSize" />
@@ -125,8 +147,10 @@
                     android:textColorHint="@color/black"
                     android:inputType="text"
                     android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/padrao"
                     android:autofillHints=""
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginStart="25dp"
                     android:layout_marginEnd="25dp"
                     tools:ignore="VisualLintTextFieldSize" />
@@ -135,7 +159,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginTop="30dp">
+                    android:layout_marginTop="20dp">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -153,18 +177,22 @@
                         android:layout_marginStart="30dp"
                         android:contentDescription="@string/app_name"
                         android:spinnerMode="dialog"
+                        android:backgroundTint="@color/padrao"
                         tools:ignore="DuplicateSpeakableTextCheck" />
                 </LinearLayout>
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnCadastro"
-                    android:layout_width="124dp"
+                    android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:layout_marginTop="35dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="20dp"
                     android:background="@drawable/btn1"
                     android:text="@string/btnCadastrar"
                     android:textSize="18sp"
                     android:textAllCaps="false"
-                    android:textColor="@color/padrão"
+                    android:textColor="@color/padrao"
                     android:layout_gravity="center"/>
             </LinearLayout>
         </ScrollView>

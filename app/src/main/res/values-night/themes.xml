@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.MenoFeme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
@@ -10,7 +10,24 @@
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="1">@color/padrao</item>
+        <item name="android:navigationBarColor">@color/black</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="ThemeOverlay.ItemGroup" parent="">
+        <item name="android:textColorSecondary">@color/cinza</item>
+    </style>
+    <style name="Theme.MenoFeme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AlertDialogTheme" parent="Theme.Material3.Light.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@color/padrao</item>
+        <item name="buttonBarPositiveButtonStyle">@color/padrao</item>
+        <item name="buttonBarNeutralButtonStyle">@color/padrao</item>
+    </style>
+
+    <style name="Theme.MenoFeme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MenoFeme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 </resources>

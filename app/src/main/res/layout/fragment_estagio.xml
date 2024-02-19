@@ -28,7 +28,7 @@
                     android:layout_marginTop="40dp"
                     android:layout_marginEnd="25dp"
                     android:hint="@string/txtUltima"
-                    android:textColorHint="@color/padrão"
+                    android:textColorHint="@color/padrao"
                     android:textSize="20sp"
                     app:drawableLeftCompat="@drawable/ic_menstruacao" />
 
@@ -64,6 +64,7 @@
                 </RadioGroup>
 
                 <TextView
+                    android:id="@+id/txtMenstruacao"
                     android:layout_width="320dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
@@ -71,7 +72,7 @@
                     android:layout_marginEnd="25dp"
                     android:layout_gravity="center"
                     android:hint="@string/txtAtraso"
-                    android:textColorHint="@color/padrão"
+                    android:textColorHint="@color/padrao"
                     android:textSize="20sp"
                     app:drawableStartCompat="@drawable/ic_menstruacao" />
 
@@ -118,7 +119,7 @@
                     android:inputType="number"
                     android:textColor="@color/black"
                     android:textColorHint="@color/black"
-                    android:visibility="invisible" />
+                    android:visibility="gone" />
 
                 <TextView
                     android:id="@+id/txtDegub"
@@ -127,9 +128,9 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="@string/app_name"
-                    android:textColor="@color/padrão"
+                    android:textColor="@color/padrao"
                     android:textSize="25sp"
-                    android:visibility="invisible" />
+                    android:visibility="gone" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnAnalise"
@@ -141,7 +142,7 @@
                     android:layout_marginEnd="30dp"
                     android:background="@drawable/btn1"
                     android:text="@string/btnAnalisar"
-                    android:textColor="@color/padrão" />
+                    android:textColor="@color/padrao" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnSaiba"
@@ -149,11 +150,12 @@
                     android:layout_height="48dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="30dp"
+                    android:layout_marginBottom="20dp"
                     android:background="@drawable/btn1"
                     android:enabled="false"
                     android:visibility="invisible"
                     android:text="@string/btnSaiba"
-                    android:textColor="@color/padrão"/>
+                    android:textColor="@color/padrao"/>
             </LinearLayout>
         </ScrollView>
     </FrameLayout>

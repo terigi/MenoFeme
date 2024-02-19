@@ -39,7 +39,7 @@
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:hint="@string/txtTipo1"
-                    android:textColorHint="@color/padrão"
+                    android:textColorHint="@color/padrao"
                     android:textSize="20sp"
                     app:drawableStartCompat="@drawable/ic_menstruacao"/>
                 <ImageButton
@@ -61,7 +61,7 @@
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:hint="@string/txtTipo2"
-                    android:textColorHint="@color/padrão"
+                    android:textColorHint="@color/padrao"
                     android:textSize="20sp"
                     app:drawableStartCompat="@drawable/ic_menstruacao"/>
                 <ImageButton
@@ -83,7 +83,7 @@
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:hint="@string/txtTipo3"
-                    android:textColorHint="@color/padrão"
+                    android:textColorHint="@color/padrao"
                     android:textSize="20sp"
                     app:drawableStartCompat="@drawable/ic_menstruacao"/>
                 <ImageButton
@@ -91,6 +91,7 @@
                     android:layout_width="48dp"
                     android:layout_height="48dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_gravity="center"
                     android:background="@drawable/btn2"
                     android:contentDescription="@string/app_name"

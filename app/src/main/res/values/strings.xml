@@ -1,6 +1,6 @@
 <resources>
     //Nome do aplicativo
-    <string name="app_name">MenoFemeApp</string>
+    <string name="app_name">MenoFeme</string>
 
     //Controles do drawermenu
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -17,6 +17,7 @@
     <string name="menu_logoff">Logoff</string>
     <string name="menu_sair">Sair</string>
     <string name="menu_excluir">Excluir conta</string>
+    <string name="menqol">Menqol</string>
     <string name="open_nav">Open Navigation Drawer</string>
     <string name="close_nav">Close Navigation Drawer</string>
     <string name="menu_estagio">Estágio</string>
@@ -32,6 +33,7 @@
 
     //Controles
     <string name="Debug">Teste</string>
+    <string name="nome_usuaria"> </string>
     <string name="menuTitle">Menu</string>
     <string name="debugNasc">Nascimento</string>
     <string name="debugEtnia">Escolha uma opção</string>
@@ -50,15 +52,15 @@
     <string name="txtAceitePrivacidade1">Política de privacidade</string>
     <string name="txtPrivacidade">Política de privacidade</string>
     <string name="txtNasc">Informe a data do seu nascimento</string>
-    <string name="txtEtnia">Etnia</string>
+    <string name="txtEtnia">Etnia:</string>
     <string name="txtJuliana"><b>Doutoranda:</b>Juliana Nobre da Silva</string>
     <string name="txtSilvia"><b>Orientadora:</b>Silvia Cristina Martini</string>
     <string name="txtTese"><b>Tese:</b> <i>Aplicativo móvel para orientação de mulheres no período do climatério</i></string>
     <string name="txtApp"> <i>Esse aplicativo foi desenvolvido a partir de uma pesquisa de doutorado da Universidade de Mogi das Cruzes com o objetivo de orientar mulheres no período do climatério</i></string>
     <string name="txtCadastroOk">Cadastro realizado com sucesso</string>
     <string name="txtBemVinda">Seja Bem-vinda,</string>
-    <string name="txtTermo">Leia nossa Política de Privacidade e nosso Termo de Consentimento Livre e Esclarecido para saber mais sobre a maneira como protegemos suas informações pessoais.Recomendamos que você participe do programa de melhoria e compartilhe suas estatísticas de uso para nos ajudar a melhorar o MenoFeme.</string>
-    <string name="txtTermoN">Para utilizar essa função os termos de Política de Privacidade  e Termo de Consentimento Livre e Esclarecido devem ser aceitos !!! Você aceita os termos? </string>
+    <string name="txtTermo">Leia nossa Política de Privacidade e nosso Termo de Consentimento Livre e Esclarecido para saber mais sobre a maneira como protegemos suas informações pessoais. Recomendamos que você participe do programa de melhoria e compartilhe suas estatísticas de uso para nos ajudar a melhorar o MenoFeme.</string>
+    <string name="txtTermoN">Para utilizar essa função os termos de Política de Privacidade  e Termo de Consentimento Livre e Esclarecido devem ser aceitos!!! Você aceita os termos? </string>
     <string name="txtExcluir">Você confirma a exclusão da sua conta nesse aplicativo?</string>
     <string name="txtUltima">Sua última menstruação foi há mais de um ano?</string>
     <string name="txtFsh">Qual o seu nível de FSH?</string>
@@ -71,12 +73,12 @@
     <string name="txtObs3">Quais mudanças podem ocorrer neste período?</string>
     <string name="txtObs4">Como passar por essa fase da melhor forma?</string>
     <string name="txtSint1">Afrontamento (calorão)</string>
-    <string name="txtSint2">Sintomas vaginais</string>
-    <string name="txtSint3">Sintomas urinários</string>
-    <string name="txtSint4">Fadiga</string>
-    <string name="txtSint5">Diminuição da libido</string>
+    <string name="txtSint2">Sintomas vaginais    </string>
+    <string name="txtSint3">Sintomas urinários    </string>
+    <string name="txtSint4">Fadiga      </string>
+    <string name="txtSint5">Diminuição da libido   </string>
     <string name="txtSint6">Problemas psicológicos e neurológicos</string>
-    <string name="txtSint7">Dores</string>
+    <string name="txtSint7">Dores      </string>
     <string name="txtSint8">Mudanças na pele e cabelo</string>
     <string name="txtTratamento">Existem algumas formas de tratar os distúrbios da menopausa.</string>
     <string name="txtTratamento1">A escolha de qual é o melhor tratamento para cada mulher deve ser discutida com o médico ginecologista de forma individualizada, levando em consideração seus sintomas, histórico médico e preferências.</string>
@@ -86,7 +88,9 @@
     <string name="txtQuestionario1"><b><i>MenQol:</i></b>Questionário Específico de qualidade de vida na menopausa</string>
     <string name="txtQuestionario2"><b><i>MauQ:</i></b> Questionário de usabilidade de aplicativos em saúde</string>
     <string name="txtObjQuest1"><b><i>Objetivo da aplicação:</i></b> Verificar a evolução dos sintomas antes e após a exposição das orientações do aplicativo</string>
+    <string name="txtMensagemQuest1">Por favor, responda a este questionário para que possamos avaliar a evolução dos seus sintomas ao longo do tempo.</string>
     <string name="txtObjQuest2"><b><i>Objetivo da aplicação: </i></b>Verificar a facilidade de uso do aplicativo</string>
+    <string name="txtMensagemQuest2">Queremos saber como foi sua experiência com este aplicativo. Responda a este questionário para avaliá-lo.</string>
     <string name="txtDefQuest"><b><i>Escala de pontos:</i></b></string>
     <string name="txtQ1Q1">Ondas de calor</string>
     <string name="txtQ1Q2">Suores noturnos</string>
@@ -94,9 +98,9 @@
     <string name="txtQ1Q4">Estar insatisfeita com a vida pessoal</string>
     <string name="txtQ1Q5">Sentindo-se ansiosa ou nervosa</string>
     <string name="txtQ1Q6">Experimentando memória fraca</string>
-    <string name="txtQ1Q7">Realizando menos do que costumava</string>
-    <string name="txtQ1Q8">Sentindo-se deprimida, deprimida ou azul</string>
-    <string name="txtQ1Q9">Ser impaciente com outras pessoas</string>
+    <string name="txtQ1Q7">Sentindo-se menos produtiva nas atividades diárias</string>
+    <string name="txtQ1Q8">Sentindo-se deprimida</string>
+    <string name="txtQ1Q9">Sendo impaciente com as outras pessoas</string>
     <string name="txtQ1Q10">Sensação de querer ficar sozinha</string>
     <string name="txtQ1Q11">Flatulência (gases) ou dores abdominais</string>
     <string name="txtQ1Q12">Dores musculares e nas articulações</string>
@@ -112,11 +116,11 @@
     <string name="txtQ1Q22">Mudança na textura ou no tom da pele</string>
     <string name="txtQ1Q23">Sentindo-se inchada</string>
     <string name="txtQ1Q24">Dor lombar</string>
-    <string name="txtQ1Q25">Micção frequente</string>
-    <string name="txtQ1Q26">Micção involuntária ao rir ou tossir</string>
+    <string name="txtQ1Q25">Tem urinado com mais frequência</string>
+    <string name="txtQ1Q26">Tem urinado involuntariamente ao rir ou tossir</string>
     <string name="txtQ1Q27">Diminuição do desejo sexual</string>
     <string name="txtQ1Q28">Secura vaginal durante a relação sexual</string>
-    <string name="txtQ1Q29">Esquivando-se de ter intimidade com parceiro</string>
+    <string name="txtQ1Q29">Evitando intimidade com o parceiro</string>
     <string name="txtQ1Q30">Diminuição da força física</string>
     <string name="txtQ2Q1">O aplicativo foi fácil de usar</string>
     <string name="txtQ2Q2">Eu gosto da interface do aplicativo</string>
@@ -165,16 +169,16 @@
     <string name="txtQ27">Escolha uma opção para a pergunta 27</string>
     <string name="txtQ28">Escolha uma opção para a pergunta 28</string>
     <string name="txtQ29">Escolha uma opção para a pergunta 29</string>
-    <string name="txtFinal1">Muito obrigada por responder o questionário MenQol!!!</string>
-    <string name="txtFinal2">Muito obrigada por responder o questionário MauQ!!!</string>
+    <string name="txtFinal1">Obrigada por responder a este questionário, suas repostas serão armazenadas obedecendo às normas de privacidade deste aplicativo e posteriormente podem ser utilizadas para avaliação da evolução dos seus sintomas.</string>
+    <string name="txtFinal2">Obrigada por responder a este questionário, suas respostas serão consideradas para a promoção de melhorias.</string>
 
 
     //Hints
-    <string name="hintNome">Digite o seu nome</string>
-    <string name="hintEmail">Digite o seu e-mail</string>
-    <string name="hintSenha">Defina uma senha</string>
-    <string name="hintPrimeira">Informe a idade da primeira menstruação</string>
-    <string name="hintProfissao">Informe a sua profissão</string>
+    <string name="hintNome">Digite seu nome</string>
+    <string name="hintEmail">Digite seu e-mail</string>
+    <string name="hintSenha">Digite sua senha</string>
+    <string name="hintPrimeira">Idade da primeira menstruação</string>
+    <string name="hintProfissao">Informe sua profissão</string>
     <string name="lblTermos"><i>Política de privacidade</i></string>
 
     //Labels
@@ -194,7 +198,7 @@
     <string name="btnTratamento">Tratamentos existentes</string>
     <string name="btnQuestionario">Questionários</string>
     <string name="btnDiario">Diário</string>
-    <string name="btnTermo">Aceitar Política de Privacidade  e Termo de Consentimento Livre e Esclarecido</string>
+    <string name="btnTermo">Aceitar Política de Privacidade e Termo de Consentimento Livre e Esclarecido</string>
     <string name="btnTermoS">Continuar App</string>
     <string name="btnAnalisar">Analisar</string>
     <string name="btnSaiba">Saiba mais</string>
@@ -206,14 +210,17 @@
     <string name="erroEmail">Digite um e-mail válido</string>
     <string name="erroConta">Essa conta já existe</string>
     <string name="erroInternet">Sem conexão com a Internet</string>
+    <string name="erroUsuaria">Usuária não cadastrada</string>
     <string name="erroOutros">Erro ao cadastrar usuário</string>
+    <string name="erroConexao">Erro de conexão</string>
     <string name="erroDados">Preencha todos os campos corretamente</string>
     <string name="erroDados1">Não foi possível realizar o Login</string>
     <string name="erroNasc">Por favor escolha uma data de nascimento válida</string>
     <string name="erroEtnia">Por favor escolha uma etnia válida</string>
-    <string name="rbSim">Sim</string>
 
+    <string name="txtWhoqol">Por favor, responda o questionário Menqol.</string>
     //Radio buttons
+    <string name="rbSim">Sim</string>
     <string name="rbNao">Não</string>
     <string name="linhaInfo">Esse aplicativo é meramente informativo e não substitui a consulta médica!!!</string>
 
@@ -223,7 +230,7 @@
     <string name="linha2Est2">Neste estágio os ciclos menstruais oscilam e as menstruações podem vir em um intervalo menor ou maior do que de costume!!!</string>
     <string name="linha3Est2">Ainda é possível engravidar, portanto, caso não tenha esta pretensão, o uso de contraceptivos deve ser mantido!!!</string>
     <string name="linha4Est2">Este é um período de mudanças e alguns sintomas podem surgir, portanto é imprescindível o acompanhamento de um ginecologista!!! </string>
-    <string name="linha2Est3">Nesse estágio os ciclos menstruais costumam ser regulares e é possível engravidar !!!</string>
+    <string name="linha2Est3">Nesse estágio os ciclos menstruais costumam ser regulares e é possível engravidar!!!</string>
     <string name="linha3Est3">Você provavelmente não apresenta sintomas de menopausa, mas se atenha aos ciclos menstruais e possíveis sintomas que possam surgir!!!</string>
     <string name="linha4Est3">Caso perceba alguma alteração relate ao seu ginecologista!!!</string>
     <string name="Linha1Duv1">Climatério é o período que interliga a fase reprodutiva e não reprodutiva da mulher, também conhecido como transição da menopausa ou perimenopausa.</string>
@@ -236,6 +243,7 @@
     <string name="Linha1Duv4">Passar por este período com acompanhamento médico é indispensável, pois este avaliará sua saúde e suas queixas, indicando a melhor intervenção.</string>
     <string name="Linha2Duv4">Além disso, cuidados com a alimentação, prática de atividade física, e manter relações sociais e familiares saudáveis também contribuem para o bem estar da mulher nesta fase.</string>
     <string name="Linha3Duv4">Outros profissionais da área da saúde como psicólogos, nutricionistas, fisioterapeutas e educadores físicos também podem auxilia-la a transcorrer este período com qualidade de vida!</string>
+    <string name="Linha3Duv5">Assista a um vídeo sobre o climatério e boa alimentação neste período:</string>
     <string name="Linha1Sint1">Como amenizar os afrontamentos?</string>
     <string name="Linha2Sint1">Usar roupas em camadas que possam ser facilmente retiradas ao perceber a chegada dos sintomas;</string>
     <string name="Linha3Sint1">Usar tecidos leves que deixem a pele “respirar”;</string>
@@ -295,7 +303,7 @@
     <string name="Linha2Tipo1">Alguns medicamentos que no geral são utilizados para tratamento da depressão, hipertensão e convulsão também são eficazes para tratar sintomas da menopausa.</string>
     <string name="Linha1Tipo2">Os tratamentos hormonais consistem na utilização de medicamentos a base de hormônios, que dependendo dos sintomas são apresentados em forma de comprimidos orais, adesivos tópicos ou formas intravaginais, como anéis, geis, comprimidos ou cremes. </string>
     <string name="Linha2Tipo2">A escolha por este tratamento deve ser analisada pelo medico ginecologista e paciente, uma vez que há restrições de uso para algumas mulheres.</string>
-    <string name="Linha1Tipo3">Tratamentos alternativos ou complementares também são indicados pelo Ministério da saúde, os quais podem ser técnica de respiração, terapia comportamental, técnicas de relaxamento, aromaterapia, utilização de ervas, vitaminas e minerais, entre outros.</string>
+    <string name="Linha1Tipo3">Tratamentos alternativos ou complementares também são indicados pelo Ministério da Saúde, os quais podem ser técnica de respiração, terapia comportamental, técnicas de relaxamento, aromaterapia, utilização de ervas, vitaminas e minerais, entre outros.</string>
     <string name="Linha1DefQuest1">0 - Não houve incômodo</string>
     <string name="Linha2DefQuest1">1 - Houve pouquíssimo incômodo</string>
     <string name="Linha3DefQuest1">2 - Houve pouco incômodo</string>
@@ -311,6 +319,40 @@
     <string name="Linha6DefQuest2">6 - Concordo quase totalmente</string>
     <string name="Linha7DefQuest2">7 - Concordo totalmente</string>
     <string name="opt0">0</string>
+
+    #youtube - texto
+    <string name="video_fadiga_1">Assista a um vídeo com técnicas de relaxamento</string>
+    <string name="video_fadiga_2">Assista a um vídeo com técnicas de escalda pés para relaxar, energizar e para dores e inchaços nas pernas</string>
+    <string name="video_dores_1">Assista a um vídeo com técnicas para fortalecimento da musculatura</string>
+    <string name="video_dores_2">Assista a um vídeo com exercícios para minimizar dores no pescoço e ombros</string>
+    <string name="video_dores_3">Assista a um vídeo com exercícios para minimizar dores na coluna</string>
+    <string name="video_dores_4">Assista a um vídeo com exercícios para minimizar dores nas articulações</string>
+    <string name="video_psico_1">Assista a vídeos com automassagem para aliviar o estresse e fadiga</string>
+    <string name="video_psico_2">Assista a um vídeo com técnicas de meditação para organizar os pensamentos e relaxar</string>
+
+    #youtube
+    <string name="link_melhor_forma"><a href="https://youtu.be/qTXmdbSQ3eU">Clique aqui</a></string>
+    <string name="link_fadiga_1"><a href="https://youtu.be/4mE2uZbJcpM">Clique aqui</a></string>
+    <string name="link_fadiga_2"><a href="https://youtu.be/DvZolyGTles">Clique aqui</a></string>
+    <string name="link_dores_1"><a href="https://youtu.be/7-HlO0FaF5U">Clique aqui</a></string>
+    <string name="link_dores_2"><a href="https://youtu.be/y-PiRseHvVk">Clique aqui</a></string>
+    <string name="link_dores_3"><a href="https://youtu.be/_7RPrhmL444">Clique aqui</a></string>
+    <string name="link_dores_4"><a href="https://youtu.be/ottjpZUbdVA">Clique aqui</a></string>
+    <string name="link_psico_1_1"><a href="https://youtu.be/YF1l5p0M0F4">Clique aqui</a></string>
+    <string name="link_psico_1_2"><a href="https://youtu.be/Q3Fs-91wgQQ">Clique aqui</a></string>
+    <string name="link_psico_2_1"><a href="https://youtu.be/L_uJGrwKUQQ">Clique aqui</a></string>
+    <string name="link_psico_2_2"><a href="https://youtu.be/i00xryJlDa4">Clique aqui</a></string>
+
+    #notificacao
+    <string name="titulo_padrao">Título</string>
+    <string name="mensagem_padrao">Descrição padrão</string>
+
+    #Alert
+    <string name="mensagem_alerta_cadastrando">Cadastrando conta</string>
+    <string name="mensagem_alerta_excluindo">Excluindo contas</string>
+    <string name="mensagem_alerta_carregando">Carregando dados</string>
+    <string name="mensagem_alerta_atualizando">Atualizando dados</string>
+    <string name="mensagem_sucesso_excluida">Conta excluída</string>
 
     #opções
     <string name="opt1">1</string>
@@ -338,4 +380,12 @@
         <item>Indígena</item>
         <item>Outra</item>
     </string-array>
+
+    <string name="txtTituloContato">Contatos</string>
+    <string name="txtEmail"><b><i>E-mail:</i></b></string>
+    <string name="txtEmail2">menofemeappbrasil@gmail.com</string>
+    <string name="txtInstagram"><b><i>Instagram:</i></b> </string>
+    <string name="txtInstagram2"><a href="https://www.instagram.com/menofeme_menopausa?utm_source=qr&amp;igsh=MTRmZ2ZpbXZzb3cxcA==">Clique aqui</a></string>
+    <string name="txtFacebook"><b><i>Facebook:</i></b></string>
+    <string name="txtFacebook2"><a href="https://www.facebook.com/profile.php?id=61550045862839&amp;mibextid=ZbWKwL">Clique aqui</a></string>
 </resources>

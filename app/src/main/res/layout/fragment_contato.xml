@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".view.ui.contato.ContatoFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp"
+            tools:ignore="UselessParent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtTituloContato"
+                    android:textColor="@color/padrao"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtEmail"
+                    android:textColor="@color/padrao"
+                    android:textSize="22sp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"/>
+
+                <TextView
+                    android:id="@+id/link_email"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/txtEmail2"
+                    android:textColor="@color/padrao"
+                    android:textColorLink="@color/padrao"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtInstagram"
+                    android:textColor="@color/padrao"
+                    android:textSize="22sp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"/>
+
+                <TextView
+                    android:id="@+id/link_instagram"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/txtInstagram2"
+                    android:textColor="@color/padrao"
+                    android:textColorLink="@color/padrao"
+                    android:textSize="23sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtFacebook"
+                    android:textColor="@color/padrao"
+                    android:textSize="22sp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"/>
+
+                <TextView
+                    android:id="@+id/link_facebook"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/txtFacebook2"
+                    android:textColor="@color/padrao"
+                    android:textColorLink="@color/padrao"
+                    android:textSize="23sp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnTermos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginEnd="90dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/btn1"
+                    android:text="@string/btnVoltar"
+                    android:textColor="@color/padrao"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -12,8 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:textSize="40sp"
-        android:textColor="@color/padrão"
+        android:textSize="35sp"
+        android:textColor="@color/padrao"
         android:gravity="center"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
@@ -27,6 +27,8 @@
         android:hint="@string/hintEmail"
         android:textColorHint="@color/black"
         android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/black"
         android:textSize="18sp"
         android:autofillHints=""
         android:layout_marginTop="10dp"
@@ -41,7 +43,9 @@
         android:padding="12dp"
         android:hint="@string/hintSenha"
         android:textColorHint="@color/black"
+        android:backgroundTint="@color/black"
         android:inputType="numberPassword"
+        android:textColor="@color/black"
         android:textSize="18sp"
         android:autofillHints=""
         android:layout_marginTop="10dp"
@@ -51,39 +55,46 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnEntrarLogin"
-        android:layout_width="124dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginTop="35dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
         android:background="@drawable/btn1"
         android:text="@string/btnEntrar"
         android:textSize="18sp"
         android:textAllCaps="false"
-        android:textColor="@color/padrão"
+        android:textColor="@color/padrao"
         android:layout_gravity="center"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCadastrarLogin"
-        android:layout_width="124dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginTop="35dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
         android:background="@drawable/btn1"
         android:text="@string/btnCadastrar"
         android:textSize="18sp"
         android:textAllCaps="false"
-        android:textColor="@color/padrão"
+        android:textColor="@color/padrao"
         android:layout_gravity="center"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSair"
-        android:layout_width="124dp"
+        android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginTop="35dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
         android:background="@drawable/btn1"
         android:text="@string/btnSair"
         android:textSize="18sp"
         android:textAllCaps="false"
-        android:textColor="@color/padrão"
-        android:layout_gravity="center"/>
+        android:textColor="@color/padrao"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
 
 
 </LinearLayout>

@@ -29,7 +29,7 @@
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:hint="@string/txtQuestionario1"
-                    android:textColorHint="@color/padrão"
+                    android:textColorHint="@color/padrao"
                     android:textSize="20sp"
                     app:drawableStartCompat="@drawable/ic_menstruacao"/>
                 <TextView
@@ -41,6 +41,17 @@
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:hint="@string/txtObjQuest1"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:hint="@string/txtMensagemQuest1"
                     android:textColorHint="@color/black"
                     android:textSize="20sp"/>
                 <ImageButton
@@ -62,7 +73,7 @@
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:hint="@string/txtQuestionario2"
-                    android:textColorHint="@color/padrão"
+                    android:textColorHint="@color/padrao"
                     android:textSize="20sp"
                     app:drawableStartCompat="@drawable/ic_menstruacao"/>
                 <TextView
@@ -74,6 +85,17 @@
                     android:gravity="center"
                     android:layout_gravity="center"
                     android:hint="@string/txtObjQuest2"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:hint="@string/txtMensagemQuest2"
                     android:textColorHint="@color/black"
                     android:textSize="20sp"/>
                 <ImageButton

@@ -9,9 +9,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AlertDialog
 import androidx.core.os.bundleOf
+import androidx.core.view.isInvisible
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.setFragmentResult
 import androidx.fragment.app.setFragmentResultListener
@@ -19,6 +21,7 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import com.lavita.menofeme.R
+import com.lavita.menofeme.view.ui.home.HomeFragment
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -33,6 +36,7 @@ class EstagioFragment : Fragment() {
     private lateinit var rb2Sim: RadioButton
     private lateinit var rb2Nao: RadioButton
     private lateinit var txtDebug: TextView
+    private lateinit var txtMenstruacao: TextView
     private lateinit var btnAnalise: androidx.appcompat.widget.AppCompatButton
     private lateinit var btnSaiba: androidx.appcompat.widget.AppCompatButton
     private lateinit var txtFsh: EditText
@@ -46,6 +50,7 @@ class EstagioFragment : Fragment() {
     private lateinit var dbEmail:String
     private lateinit var resultadoEstagio: ResultadoEstagioFragment
     private lateinit var estagio: EstagioFragment
+    //private lateinit var home: HomeFragment
 
 
     private var posEstagio: Int = 0
@@ -68,6 +73,7 @@ class EstagioFragment : Fragment() {
         rb2Nao = pegarView.findViewById(R.id.rb2Nao)
         txtFsh = pegarView.findViewById(R.id.txtFsh)
         txtDebug = pegarView.findViewById(R.id.txtDegub)
+        txtMenstruacao = pegarView.findViewById(R.id.txtMenstruacao)
         btnAnalise = pegarView.findViewById(R.id.btnAnalise)
         btnSaiba = pegarView.findViewById(R.id.btnSaiba)
         txtEst1 = getString(R.string.txtEst1)
@@ -77,12 +83,23 @@ class EstagioFragment : Fragment() {
         q2Est = getString(R.string.Q2Est)
         resultadoEstagio = ResultadoEstagioFragment()
         estagio = EstagioFragment()
+        //home = HomeFragment()
 
+        rdgAtraso.visibility = View.GONE
+        txtMenstruacao.visibility = View.GONE
+        txtDebug.visibility = View.GONE
 
+        /*activity?.onBackPressedDispatcher?.addCallback(viewLifecycleOwner, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                setFragment(home)
+            }
+        })*/
+
+        //Log.d("ACESSO", "Antes do usuário")
         val user1 = Firebase.auth.currentUser
         user1?.let {
             val email = it.email
-            db.collection("User").document(email.toString())
+                db.collection("User").document(email.toString())
                 .addSnapshotListener { documento, _ ->
                     if (documento != null) {
                         val termo = documento.getString("Termos")
@@ -103,13 +120,13 @@ class EstagioFragment : Fragment() {
             }
             if (posEstagio == 0) {
                 Toast.makeText(requireContext(), q1Est, Toast.LENGTH_SHORT).show()
-                txtDebug.visibility = View.INVISIBLE
+                txtDebug.visibility = View.GONE
             } else if ((posEstagio == 1)) {
                 txtDebug.visibility = View.VISIBLE
                 txtDebug.text = txtEst1
                 btnSaiba.visibility = View.VISIBLE
                 btnSaiba.isEnabled = true
-                btnAnalise.visibility = View.INVISIBLE
+                btnAnalise.visibility = View.GONE
                 rbSim.isEnabled = false
                 rbNao.isEnabled = false
                 rb2Sim.isEnabled = false
@@ -117,13 +134,13 @@ class EstagioFragment : Fragment() {
                 infoEst = 1
             } else if ((posEstagio == 2) and (valorFsh < 20)) {
                 Toast.makeText(requireContext(), q2Est, Toast.LENGTH_SHORT).show()
-                txtDebug.visibility = View.INVISIBLE
+                txtDebug.visibility = View.GONE
             } else if ((posEstagio == 3) or (valorFsh >= 20)) {
                 txtDebug.visibility = View.VISIBLE
                 txtDebug.text = txtEst2
                 btnSaiba.visibility = View.VISIBLE
                 btnSaiba.isEnabled = true
-                btnAnalise.visibility = View.INVISIBLE
+                btnAnalise.visibility = View.GONE
                 rbSim.isEnabled = false
                 rbNao.isEnabled = false
                 rb2Sim.isEnabled = false
@@ -135,7 +152,7 @@ class EstagioFragment : Fragment() {
                 txtDebug.text = txtEst2
                 btnSaiba.visibility = View.VISIBLE
                 btnSaiba.isEnabled = true
-                btnAnalise.visibility = View.INVISIBLE
+                btnAnalise.visibility = View.GONE
                 rbSim.isEnabled = false
                 rbNao.isEnabled = false
                 rb2Sim.isEnabled = false
@@ -147,7 +164,7 @@ class EstagioFragment : Fragment() {
                 txtDebug.text = txtEst3
                 btnSaiba.visibility = View.VISIBLE
                 btnSaiba.isEnabled = true
-                btnAnalise.visibility = View.INVISIBLE
+                btnAnalise.visibility = View.GONE
                 rbSim.isEnabled = false
                 rbNao.isEnabled = false
                 rb2Sim.isEnabled = false
@@ -161,7 +178,9 @@ class EstagioFragment : Fragment() {
 
         btnSaiba.setOnClickListener {
             txtFsh.text.isEmpty()
+            Log.d("ACESSO", termos)
             if (termos != "1") {
+                println("Entrou no if")
                 AlertDialog.Builder(requireContext())
                     .setTitle(R.string.menu_app)
                     .setMessage(R.string.txtTermoN)
@@ -212,11 +231,11 @@ class EstagioFragment : Fragment() {
                     .setIcon(R.drawable.ic_menstruacao)
                     .show()
             } else {
-
                 //Criando um coleção
                 val user = Firebase.auth.currentUser
                 user?.let {
                     val email = it.email
+
                     db.collection("User").document(email.toString())
                         .addSnapshotListener { documento, _ ->
                             if (documento != null) {
@@ -263,7 +282,9 @@ class EstagioFragment : Fragment() {
                 rb2Nao.isEnabled = false
                 rb2Sim.isChecked = false
                 rb2Nao.isChecked = false
-                txtFsh.visibility = View.INVISIBLE
+                txtFsh.visibility = View.GONE
+                txtMenstruacao.visibility = View.GONE
+                rdgAtraso.visibility = View.GONE
             }else if (R.id.rbNao == checkedId) {
                 posEstagio = 2
                 rb2Sim.isEnabled = true
@@ -271,6 +292,8 @@ class EstagioFragment : Fragment() {
                 rb2Sim.isChecked = false
                 rb2Nao.isChecked = false
                 txtFsh.visibility = View.VISIBLE
+                txtMenstruacao.visibility = View.VISIBLE
+                rdgAtraso.visibility = View.VISIBLE
             }
         }
     }

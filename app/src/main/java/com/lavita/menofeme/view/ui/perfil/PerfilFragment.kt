@@ -74,19 +74,19 @@ class PerfilFragment : Fragment() {
             txtEtnia.isEnabled = true
             btnAtualizar.isEnabled = true
             btnAlterar.isEnabled = false
-            btnAtualizar.setTextColor(resources.getColor(R.color.padrão))
+            btnAtualizar.setTextColor(resources.getColor(R.color.padrao))
             btnAlterar.setTextColor(resources.getColor(R.color.gray))
 
-            /* //Spinner
+            //Spinner
 
-                ArrayAdapter.createFromResource(requireContext(),  R.array.spinner_lista, android.R.layout.simple_spinner_item
+             /*   ArrayAdapter.createFromResource(requireContext(),  R.array.spinner_lista, android.R.layout.simple_spinner_item
                 ).also { adapter ->
                     adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
                     txtEtnia.adapter = adapter
 
                     txtEtnia.onItemSelectedListener = object: AdapterView.OnItemSelectedListener{
                         override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
-                            //auxEtnia1 = txtEtnia.selectedItem.toString()
+                            auxEtnia = txtEtnia.selectedItem.toString()
                         }
                         override fun onNothingSelected(p0: AdapterView<*>?) {
                         }
@@ -105,7 +105,7 @@ class PerfilFragment : Fragment() {
 
             btnNasc.setOnClickListener {
                 DatePickerDialog(
-                requireContext(), dateSetListener,
+                requireContext(), R.style.DatePickerTheme, dateSetListener,
                 dataNasc.get(Calendar.YEAR),
                 dataNasc.get(Calendar.MONTH),
                 dataNasc.get(Calendar.DAY_OF_MONTH))

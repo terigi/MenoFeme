@@ -1,5 +1,8 @@
 package com.lavita.menofeme.view.ui.tratamentos
 
+import android.content.ActivityNotFoundException
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -54,7 +57,7 @@ class ResultadoTratamentosFragment : Fragment() {
                 txtResTrat2.text = Linha2Tipo2
             } else if (result.toString().toInt() == 3) {
                 txtResTrat1.text = Linha1Tipo3
-                txtResTrat2.visibility = View.INVISIBLE
+                txtResTrat2.visibility = View.GONE
             }
         }
         btnHomeTrat.setOnClickListener{
@@ -66,5 +69,14 @@ class ResultadoTratamentosFragment : Fragment() {
         val fT = requireActivity().supportFragmentManager.beginTransaction()
         fT.replace(R.id.nav_host_fragment_content_principal, fragment)
         fT.commit()
+    }
+    private fun openYoutubeLink(youtubeID: String) {
+        val intentApp = Intent(Intent.ACTION_VIEW, Uri.parse("vnd.youtube:" + youtubeID))
+        val intentBrowser = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com/watch?v=" + youtubeID))
+        try {
+            this.startActivity(intentApp)
+        } catch (ex: ActivityNotFoundException) {
+            this.startActivity(intentBrowser)
+        }
     }
 }

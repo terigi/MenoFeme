@@ -1,11 +1,12 @@
 package com.lavita.menofeme.view
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.CheckBox
+import androidx.appcompat.app.AppCompatActivity
 import com.lavita.menofeme.R
+
 
 class Termos : AppCompatActivity() {
     private lateinit var ckbTermos: CheckBox
@@ -49,3 +50,5 @@ class Termos : AppCompatActivity() {
         }
     }
 }
+
+
